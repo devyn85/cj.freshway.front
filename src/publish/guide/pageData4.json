@@ -1,0 +1,482 @@
+{
+	"_comment": "state => 0:대기 / 1:우선진행 / 2:진행중 / 3:완료 / 4:취소 / 5:개발이미완료",
+	"data": [
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "일일물동량조회(기간별)",
+			"url": "KpDailyQTY",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "일일물동량조회(일별)",
+			"url": "KpDailyQTYRealTime",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "월별물동량조회",
+			"url": "KpMonthlyQTYRealTime",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "물류센터현황",
+			"url": "KpCenterDayState",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "출차관리현황",
+			"url": "KpCenterDayTMDlvState",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "입고결품실적",
+			"url": "KpDpShortageResult",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "출고결품실적",
+			"url": "KpWdShortageResult",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "물류비실적",
+			"url": "KpCostLogisticsResult",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "배송이슈현황",
+			"url": "TmIssue",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "수송진행현황",
+			"url": "KpSTOInplanTotal",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "재고운영지표",
+			"depth3": "외부창고재고모니터링",
+			"url": "KpEXstorageMonitoring",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "재고운영지표",
+			"depth3": "센터capa현황",
+			"url": "KpLocationCapaMonitoring",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "재고운영지표",
+			"depth3": "센터capa현황(new)",
+			"url": "KpLocationCapaMonitoringNew",
+			"date": "2025-11-18",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "재고운영지표",
+			"depth3": "물류센터별보관공간현황",
+			"url": "KpLocationCapaSummary",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "재고운영지표",
+			"depth3": "센터Capa스캔현황",
+			"url": "KpLocationCapaScan",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "검수지표",
+			"depth3": "입고검수현황",
+			"url": "KpDpInspectMonitoring",
+			"date": "2025-12-12",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "검수지표",
+			"depth3": "상차검수현황",
+			"url": "KpWdLoadMonitoring",
+			"date": "2025-12-12",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "검수지표",
+			"depth3": "오피킹현황",
+			"url": "KpWdMissPickMonitoring",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "검수지표",
+			"depth3": "광역출고검수현황",
+			"url": "KpDpInspectMonitoringSTO",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "검수지표",
+			"depth3": "광역일배검수현황",
+			"url": "WdInplanSTODaily",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "검수지표",
+			"depth3": "입출고통합검수현황",
+			"url": "KpDpWdIntegratedMonitoring",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "검수지표",
+			"depth3": "입고검수현황(New)",
+			"url": "KpDpInspectMonitoringNew",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "마감지표",
+			"depth3": "마감진행현황",
+			"url": "KpClose",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "마감지표",
+			"depth3": "마감상태관리",
+			"url": "IbClose",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "이체및출고현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "이체입고트래킹현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "결품현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "클레임실적현황1",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "클레임실적현황2",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "클레임실적현황3",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "출도착지표",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "온도관제",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "사진촬영율1",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "사진촬영율2",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "차량현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "인입현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "차량관련일일현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "운송비일마감현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "일간권역별원단위",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "월간권역별원단위",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "운송지표",
+			"depth3": "일별O2O운영현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "외부창고지표",
+			"depth3": "외부창고입출현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "외부창고지표",
+			"depth3": "수기출고현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "외부창고지표",
+			"depth3": "외부창고보관료정산실적현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "외부창고지표",
+			"depth3": "전년比.사이트&상품別요율변화",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "외부창고지표",
+			"depth3": "외부창고운송료정산실적현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "외부창고지표",
+			"depth3": "사이트,상품/운송社별정산현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "물류 지표 현행화 및 대시보드 - 수송 적재율(KG/PLT)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "물류 지표 현행화 및 대시보드 - 재고회전일",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표/모니터링",
+			"depth2": "센터운영지표",
+			"depth3": "인시 생산성 지표",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표",
+			"depth2": "생산성컨트롤",
+			"depth3": "일별리포트 입력화면",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표",
+			"depth2": "생산성컨트롤",
+			"depth3": "일별리포트 출력화면",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "지표",
+			"depth2": "생산성컨트롤",
+			"depth3": "공정별 생산성 결과값 조회",
+			"url": "kpProcessResult",
+			"date": "2025-12-11",
+			"state": 3,
+			"etc": "완료(Tab)"
+		}
+	]
+}

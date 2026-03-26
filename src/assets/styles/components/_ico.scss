@@ -1,0 +1,72 @@
+/* stylelint-disable */
+// ico 용
+
+$ico-size: 's48', 's100', 's112';
+$ico-icoSize: 's24', 's50', 's64';
+/* stylelint-enable */
+
+[class*='ico-'] {
+	position: relative;
+}
+
+.ico {
+	&-svg {
+		@include icoSvg(16px, $block: true);
+	}
+
+	&-required {
+		@include fontBody14(400, map-get($colors, danger));
+
+		&::after {
+			content: '*';
+		}
+	}
+
+	&-tooltip {
+		@include sizeWH(20px);
+		display: inline-block;
+	}
+
+	&-avatar {
+		&__group {
+			@include flexCenter;
+
+			background: $gray-300;
+			border-radius: 50%;
+
+			@each $size in $ico-size {
+				&.size-#{$size} {
+					@include sizeWH(map-get($sizes, $size));
+				}
+			}
+
+			@each $size in $ico-icoSize {
+				&.icoSize-#{$size} {
+					.ico-svg {
+						@include sizeWH(map-get($sizes, $size));
+					}
+				}
+			}
+
+			.ico-svg {
+				color: $white;
+			}
+		}
+	}
+
+	&-symbol {
+		&__group {
+			@include flexCenter;
+			@include sizeWH(map-get($sizes, s));
+			@include borderStyle('multi', map-get($colors, secondary));
+
+			position: relative;
+			background: $white;
+			border-radius: 50%;
+
+			.ico-svg {
+				color: map-get($colors, secondary);
+			}
+		}
+	}
+}

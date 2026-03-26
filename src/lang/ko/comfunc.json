@@ -1,0 +1,119 @@
+{
+  "bbs": {
+    "title": "공지사항",
+    "search": {
+      "daterange": "게시기간",
+      "bbsTpCd": "공지구분",
+      "viewYn": "공지여부",
+      "bbsTitleNote": "제목명",
+      "searchText": "검색어",
+      "term": {
+        "bbsTpCd": {
+          "all": "---전체---",
+          "noti": "공지사항",
+          "faq": "FAQ",
+          "etc": "기타"
+        },
+        "searchType": {
+          "title": "제목",
+          "titleContent": "제목+내용"
+        }
+      }
+    },
+    "grid": {
+      "title": "공지사항 조회",
+      "bbsSeq": "게시번호",
+      "bbsScp": "공지대상",
+      "bbsTp": "공지구분",
+      "bbsTpCd": "공지구분",
+      "bbsTitle": "제목",
+      "bbsNote": "내용",
+      "attchYn": "첨부파일",
+      "vwCnt": "조회수",
+      "vwYn": "공지여부",
+      "regrNm": "게시자",
+      "regDt": "게시일"
+    },
+    "attch": {
+      "title": "첨부문서",
+      "guide": "파일첨부는 다음과 같은 파일형식(ppt,doc,xls,pptx,xlsx,docx,txt,jpg,gif,bmp,jpeg,pdf,tif,png)만 가능합니다.",
+      "file": "첨부파일"
+    },
+    "modified": "수정사항이 있습니다. 창을 닫으시겠습니까?"
+  },
+  "filepage": {
+    "title": "파일업로드",
+    "grid": {
+      "attchFileNm": "파일명",
+      "attchFileSz": "파일크기",
+      "attchFileNo": "순번",
+      "regId": "등록자ID",
+      "regNm": "등록자",
+      "regDt": "등록일"
+    },
+    "msg": {
+      "exceedMaxSize": "첨부가능한 용량을 초과하였습니다."
+    }
+  },
+  "popup": {
+    "main": {
+      "searchNm": "사원/담당자",
+      "popupTitle": "사원조회팝업"
+    },
+    "noSelect": "선택한 행이 없습니다."
+  },
+  "excel": {
+    "title": {
+      "download": "다운로드용 그리드",
+      "upload": "서버 사이드 업로드용 그리드"
+    }
+  },
+  "mail": {
+    "title": "템플릿 파일을 이용한 메일 전송 테스트",
+    "receiver": "수신자 메일 주소",
+    "sendMailDocs": {
+      "title": "요소 설명"
+    },
+    "sendMailTest": {
+      "title": "전송 테스트",
+      "mailTemplateId": "보낼 메일의 템플릿 아이디",
+      "mailTitle": "메일 제목",
+      "sender": "발신자 메일 주소",
+      "senderId": "발신자 아이디",
+      "contentsArgs": "템플릿의 key-value 값",
+      "receiverAddr": "수신자",
+      "attchFileList": "첨부파일 리스트"
+    }
+  },
+  "rd": {
+    "title": "RD템플릿"
+  },
+  "largedata": {
+    "title": "시스템 예외 이력",
+    "grid": {
+      "exnNo": "일련번호",
+      "excptCnts": "예외내용",
+      "occrDy": "발생일자",
+      "clntAddr": "클라이언트주소",
+      "svrAddr": "서버주소",
+      "callUri": "호출URL"
+    }
+  },
+  "chart": {
+    "search": {
+      "baseYm": "기준년월"
+    },
+    "columnChart": "컬럼차트",
+    "lineChart": "라인차트"
+  },
+  "editor": {
+    "title": "에디터"
+  },
+  "calendar": {
+    "title": "달력"
+  },
+  "component": {
+    "inputChar": "한글자 이상 입력하세요.",
+    "Choose": "선택하세요."
+  }
+}

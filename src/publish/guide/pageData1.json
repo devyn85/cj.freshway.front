@@ -1,0 +1,644 @@
+{
+	"_comment": "state => 0:대기 / 1:우선진행 / 2:진행중 / 3:완료 / 4:취소 / 5:개발이미완료",
+	"data": [
+		{
+			"depth1": "주문",
+			"depth2": "주문현황",
+			"depth3": "주문수신모니터링",
+			"url": "OmInplanMonitoring",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문현황",
+			"depth3": "주문마감현황",
+			"url": "DvDataviewMulti21SP",
+			"date": "2025-09-19",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문현황",
+			"depth3": "주문이력현황",
+			"url": "OmInplan",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문현황",
+			"depth3": "월간주간발주량체크",
+			"url": "OmPurchaseCheck",
+			"date": "2025-08-08",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품발주현황",
+			"url": "OmPurchaseMonitoring",
+			"date": "2025-09-08",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품자동발주",
+			"url": "OmPurchaseModify",
+			"date": "2025-09-12",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품자동발주_VIEW",
+			"url": "OmPurchaseStorageAutoTotalView",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품발주삭제",
+			"url": "OmPurchaseModify",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품자동발주(타사)",
+			"url": "OmPurchaseStorageAutoTPL",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "외부비축센터발주",
+			"url": "OmPurchaseOutSTOTotal",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "물류센터간이체",
+			"url": "OmOrderCreationSTO",
+			"date": "2025-09-18",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품센터간이체",
+			"url": "OmOrderCreationSTOForDc",
+			"date": "2025-09-18",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "당일광역보충발주",
+			"url": "OmOrderCreationSTOOrdBase",
+			"date": "2025-08-05",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "외부센터보충발주",
+			"url": "OmOrderCreationSTOForOut",
+			"date": "2025-06-13",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품자동발주관리",
+			"url": "OmAutoOrderSetup",
+			"date": "2025-07-30",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "발주용휴일관리",
+			"url": "CmCalendarManager",
+			"date": "2025-09-08",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문요청",
+			"depth3": "CK주문결재내역",
+			"url": "OmCkApproval",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "배송전달사항",
+			"url": "TmInplanMessage",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "배차변경이력",
+			"url": "TmInplanModifyHistory",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "배차작업로그(차량별)",
+			"url": "DvDataviewMultiSP",
+			"date": "",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "배차작업로그(거래처별)",
+			"url": "DvDataviewMultiSP",
+			"date": "",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "거래처별POP미등록현황",
+			"url": "TmPopUnregister",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "권역별배차정보(명칭변경)",
+			"url": "TmResultDistrictCar",
+			"date": "",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "차량별배차정보",
+			"url": "TmResultCar",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "일별임시차현황(명칭변경)",
+			"url": "TmResultTempCar",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "거래처별이중POP배차현황",
+			"url": "DvDataviewSingleSP",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "배송클레임정보",
+			"url": "TmClaimCar",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "거래처별메모사항조회",
+			"url": "TmDeliveryMemo",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "배차마스터체크결과",
+			"url": "DvDataviewMultiSP",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "분할미적용관리처",
+			"url": "TmMngplcIDUndone",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "자동배차처리",
+			"url": "TmCarAutoAllocation",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "수동배차조정",
+			"url": "TmCarAllocationModify",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "차량별배차조정",
+			"url": "TmTempCarAllocation",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "배차확정",
+			"url": "TmAllocationConfirm",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "일별배차리스트",
+			"url": "TmInplan",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차작업",
+			"depth3": "롤테이너번호등록",
+			"url": "TmInplanCust",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "차량관제",
+			"depth3": "차량관제",
+			"url": "commWebBrowser",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "차량관제",
+			"depth3": "운행일지",
+			"url": "TmCarPositionHistory",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "차량관제",
+			"depth3": "온도기록정보",
+			"url": "TmTemperatureCar",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "차량관제",
+			"depth3": "배송현황",
+			"url": "TmDeliveryStatus",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "차량관제",
+			"depth3": "주점관리고객사",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "고객배송관리",
+			"depth3": "CRM요청관리",
+			"url": "MsCrmWmsMemo",
+			"date": "2025-09-08",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고진행현황",
+			"url": "DpInplan",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "이력상품입고현황",
+			"url": "DpInplanSN",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "광역입고현황",
+			"url": "DpInplanSTO",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "광역입고현황(ALL)",
+			"url": "DvDataviewSingleSP",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "일배협력사별주문현황(RDC검증중)",
+			"url": "OmOrderCustDaily",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고하차관리",
+			"url": "DpUnload",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고검수지정",
+			"url": "DpTask",
+			"date": "2025-06-20",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "일배입고검수출력",
+			"url": "DpInspectDailyPrint",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고라벨출력",
+			"url": "DpSkuLabel",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고라벨출력(검수)",
+			"url": "DpSkuLabelInspect",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고라벨출력(광역)",
+			"url": "DpLabelSTO",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고검수처리",
+			"url": "DpInspect",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고확정처리",
+			"url": "DpReceipt",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고확정처리(수원3층)",
+			"url": "DpReceiptBox",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "입고이력정보확정처리",
+			"url": "StConvertCFM",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "외부비축입고현황",
+			"url": "DpInplanOutOrg",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "외부비축입고처리",
+			"url": "DpReceiptExDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "유니패스유통이력정보등록",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고작업",
+			"depth3": "일배입고검수출력",
+			"url": "DpInspectDailyPrint",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "O2O 저장품발주",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품자동발주검수",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "저장품자동발주관제",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "배송고객모니터링",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배송",
+			"depth2": "배차현황",
+			"depth3": "3PL배송주문",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "주문",
+			"depth2": "주문등록",
+			"depth3": "외부창고STO입고처리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고작업",
+			"depth3": "3PL 협력사 입고정보 조회",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고작업",
+			"depth3": "입고 예정진행 현황 (입차시간포함)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고작업",
+			"depth3": "위탁 물류 처리 - 입고주문",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "입고",
+			"depth2": "입고현황",
+			"depth3": "수송 내역 조회",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		}
+	]
+}

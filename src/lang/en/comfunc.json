@@ -1,0 +1,119 @@
+{
+  "bbs": {
+    "title": "en공지사항",
+    "search": {
+      "daterange": "en게시기간",
+      "bbsTpCd": "en공지구분",
+      "viewYn": "en공지여부",
+      "bbsTitleNote": "en제목명",
+      "searchText": "en검색어",
+      "term": {
+        "bbsTpCd": {
+          "all": "en---전체---",
+          "noti": "en공지사항",
+          "faq": "enFAQ",
+          "etc": "en기타"
+        },
+        "searchType": {
+          "title": "en제목",
+          "titleContent": "en제목+내용"
+        }
+      }
+    },
+    "grid": {
+      "title": "en공지사항 조회",
+      "bbsSeq": "en게시번호",
+      "bbsScp": "en공지대상",
+      "bbsTp": "en공지구분",
+      "bbsTpCd": "en공지구분",
+      "bbsTitle": "en제목",
+      "bbsNote": "en내용",
+      "attchYn": "en첨부파일",
+      "vwCnt": "en조회수",
+      "vwYn": "en공지여부",
+      "regrNm": "en게시자",
+      "regDt": "en게시일"
+    },
+    "attch": {
+      "title": "en첨부문서",
+      "guide": "en파일첨부는 다음과 같은 파일형식(ppt,doc,xls,pptx,xlsx,docx,txt,jpg,gif,bmp,jpeg,pdf,tif,png)만 가능합니다.",
+      "file": "en첨부파일"
+    },
+    "modified": "en수정사항이 있습니다. 창을 닫으시겠습니까?"
+  },
+  "filepage": {
+    "title": "en파일업로드",
+    "grid": {
+      "attchFileNm": "en파일명",
+      "attchFileSz": "en파일크기",
+      "attchFileNo": "en순번",
+      "regId": "en등록자ID",
+      "regNm": "en등록자",
+      "regDt": "en등록일"
+    },
+    "msg": {
+      "exceedMaxSize": "en첨부가능한 용량을 초과하였습니다."
+    }
+  },
+  "popup": {
+    "main": {
+      "searchNm": "en사원/담당자",
+      "popupTitle": "en사원조회팝업"
+    },
+    "noSelect": "No rows selected."
+  },
+  "excel": {
+    "title": {
+      "download": "",
+      "upload": ""
+    }
+  },
+  "mail": {
+    "title": "en템플릿 파일을 이용한 메일 전송 테스트",
+    "receiver": "en수신자 메일 주소",
+    "sendMailDocs": {
+      "title": "en요소 설명"
+    },
+    "sendMailTest": {
+      "title": "en전송 테스트",
+      "mailTemplateId": "en보낼 메일의 템플릿 아이디",
+      "mailTitle": "en메일 제목",
+      "sender": "en발신자 메일 주소",
+      "senderId": "en발신자 아이디",
+      "contentsArgs": "en템플릿의 key-value 값",
+      "receiverAddr": "en수신자",
+      "attchFileList": "en첨부파일 리스트"
+    }
+  },
+  "rd": {
+    "title": "RD Template"
+  },
+  "largedata": {
+    "title": "en시스템 예외 이력",
+    "grid": {
+      "exnNo": "en일련번호",
+      "excptCnts": "en예외내용",
+      "occrDy": "en발생일자",
+      "clntAddr": "en클라이언트주소",
+      "svrAddr": "en서버주소",
+      "callUri": "en호출URL"
+    }
+  },
+  "chart": {
+    "search": {
+      "baseYm": "기준년월"
+    },
+    "columnChart": "컬럼차트",
+    "lineChart": "라인차트"
+  },
+  "editor": {
+    "title": "en에디터"
+  },
+  "calendar": {
+    "title": "en달력"
+  },
+  "component": {
+    "inputChar": "한글자 이상 입력하세요.",
+    "Choose": "선택하세요."
+  }
+}

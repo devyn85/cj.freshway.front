@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 40" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:miter;stroke:rgb(35.294119%,35.294119%,35.294119%);stroke-opacity:1;stroke-miterlimit:4;" d="M -2746.101577 -4378.95028 L -2740.71258 -4374.036607 L -2746.101577 -4368.948325 " transform="matrix(3.272728,0,0,3.333333,9038.300977,14599.830433)"/>
+<path style="fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:miter;stroke:rgb(35.294119%,35.294119%,35.294119%);stroke-opacity:1;stroke-miterlimit:4;" d="M -2740.715773 -4378.95028 L -2746.102383 -4374.036607 L -2740.715773 -4368.948325 " transform="matrix(3.272728,0,0,3.333333,8990.561426,14599.830433)"/>
+<path style="fill:none;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(35.294119%,35.294119%,35.294119%);stroke-opacity:1;stroke-miterlimit:4;" d="M 5.400281 3.000001 C 5.400281 1.67461 4.326063 0.601172 2.999999 0.601172 C 1.673936 0.601172 0.599718 1.67461 0.599718 3.000001 C 0.599718 4.325391 1.673936 5.398829 2.999999 5.398829 C 4.326063 5.398829 5.400281 4.325391 5.400281 3.000001 Z M 5.400281 3.000001 " transform="matrix(3.272728,0,0,3.333333,26.181819,10)"/>
+</g>
+</svg>

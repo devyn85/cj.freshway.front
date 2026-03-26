@@ -1,0 +1,327 @@
+$g-font: 400 12px / 1.2 monospace;
+
+.guide {
+	&__section {
+		height: 100vh;
+		overflow-y: auto;
+		padding-bottom: 100px;
+
+		&:not(.pd-0) {
+			padding: 30px;
+
+			@include breakpointMax(l) {
+				padding: 10px;
+			}
+		}
+
+		&:not(.type-table-not) {
+			table {
+				text-align: center;
+
+				th,
+				td {
+					@include borderStyle(bottom);
+					@include fontBody12(400);
+
+					padding: 8px;
+
+					&:not(:last-child) {
+						@include borderStyle(right);
+					}
+				}
+
+				thead {
+					th,
+					td {
+						color: $white;
+						background: $gray-900;
+
+						&:not(:last-child) {
+							border-color: $white;
+						}
+					}
+				}
+
+				tbody {
+					th,
+					td {
+						&:nth-child(1),
+						&:nth-child(2) {
+							text-align: left;
+						}
+					}
+				}
+
+				tr {
+					&:hover {
+						background: $gray-100;
+					}
+				}
+			}
+		}
+
+		.ico-svg__list {
+			.ico-svg {
+				@include icoSvg(64px, $gray-100);
+				background: $gray-700;
+			}
+		}
+
+		.just-end {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.popup__section {
+			&:not(:first-of-type) {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	&__group {
+		.guide__title + & {
+			margin-top: 20px;
+		}
+
+		.guide__code + & {
+			margin-top: 10px;
+		}
+	}
+
+	&__interval {
+		> li + li {
+			margin-top: 30px;
+		}
+	}
+
+	&__hidden {
+		@include screenOut;
+	}
+
+	&__title {
+		@include borderStyle(bottom);
+		@include fontHeadings(h1);
+
+		padding-bottom: 20px;
+
+		& ~ & {
+			margin-top: 50px;
+		}
+	}
+
+	&__code {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		color: $gray-200;
+		font: $g-font;
+		background: $gray-700;
+
+		&:first-of-type {
+			margin-top: 10px;
+		}
+
+		& + & {
+			margin-top: 1px;
+		}
+	}
+
+	&__list {
+		&--row {
+			@include flexWrap;
+			margin: -10px;
+
+			> li {
+				width: calc((100% - 100px) / 5);
+				margin: 10px;
+				gap: 8px;
+				&.w100 {
+					width: 100%;
+				}
+			}
+		}
+
+		&--column {
+			> li {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__item {
+		@include fontBody14(400);
+		margin-bottom: 10px;
+
+		&--title {
+			@include fontHeadings(h3);
+
+			display: flex;
+			padding-bottom: 10px;
+
+			&::before {
+				flex-shrink: 0;
+				padding-right: 10px;
+				content: '\2218';
+			}
+		}
+	}
+
+	&__box {
+		@include borderStyle('multi');
+
+		padding: 20px;
+		color: $black;
+
+		.cate {
+			margin-top: 10px;
+		}
+
+		&.flex {
+			display: flex;
+			gap: 20px;
+		}
+		&:not(.g--type2) {
+			font: $g-font;
+		}
+
+		&.test-ico {
+			.ico-svg {
+				@include sizeWH(100px);
+				color: $yellow-700;
+				background: map-get($colors, danger);
+			}
+		}
+
+		.select__section + .select__section {
+			margin-left: 40px;
+		}
+	}
+
+	&-tab {
+		&__menus {
+			@include flexAlignCen;
+			margin: 20px 0;
+		}
+
+		&__menu {
+			& + & {
+				margin-left: 10px;
+			}
+		}
+
+		&__item {
+			@include borderStyle('multi');
+			@include fontBody14(400);
+
+			padding: 10px 20px;
+			color: $gray-700;
+			border-radius: 10px;
+
+			&.is-active {
+				color: $white;
+				background: $gray-500;
+				border-color: $gray-500;
+			}
+		}
+
+		&__panel {
+			.progress {
+				@include fontBody12(400);
+
+				height: 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&-count {
+		&__section {
+			@include flexJustEnd;
+			padding-bottom: 10px;
+		}
+
+		&__item {
+			@include fontBody14(400);
+
+			&:last-of-type {
+				color: $gray-500;
+				text-decoration: line-through;
+			}
+
+			& + & {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	&-progress {
+		@include flexAlignCen;
+
+		margin-bottom: 10px;
+		background-color: $gray-200;
+
+		&-bar {
+			@include flexCenter;
+			@include fontBody11($white);
+
+			flex-shrink: 0;
+			padding: 4px 0;
+			color: $white;
+			height: 24px;
+		}
+	}
+
+	&-popup__section {
+		padding: 24px 0;
+		overflow: auto;
+		background: $red-700;
+
+		&.type-w500 {
+			@include flexJustCen;
+		}
+
+		&.type-w800 {
+			@include flexJustCen;
+
+			@include breakpointMax(m) {
+				justify-content: flex-start;
+				padding: 24px;
+			}
+		}
+
+		&.type-w1140 {
+			@include flexJustCen;
+
+			@include breakpointMax(xl) {
+				justify-content: flex-start;
+				padding: 24px;
+			}
+		}
+	}
+
+	&.header-breadcrumb {
+		&__section {
+			flex-shrink: 0;
+			height: 60px;
+			background: $yellow-700;
+		}
+	}
+}
+
+.guide + .footer {
+	&__section {
+		flex-shrink: 0;
+		height: 100px;
+		margin-top: auto;
+		background: $gray-500;
+	}
+}
+
+.w100 {
+	.ant-row {
+		> li {
+			width: 100%;
+		}
+	}
+}

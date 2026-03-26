@@ -1,0 +1,59 @@
+{
+	"Utils isNull": {
+    "prefix": "cf-utils-isNull",
+    "body": [
+      "// import commUtil from '@/util/CommUtil';",
+      "if (commUtil.isNull(${1:str})) {",
+      "  // 업무 로직",
+      "}"
+    ],
+    "description": "Utils isNull"
+  },
+	"Utils isEmpty": {
+    "prefix": "cf-utils-isEmpty",
+    "body": [
+      "// import commUtil from '@/util/CommUtil';",
+      "if (commUtil.isEmpty(${1:str})) {",
+      "  // 업무 로직",
+      "}"
+    ],
+    "description": "Utils isEmpty"
+  },
+	"Utils isNotEmpty": {
+    "prefix": "cf-utils-isNotEmpty",
+    "body": [
+      "// import commUtil from '@/util/CommUtil';",
+      "if (commUtil.isNotEmpty(${1:str})) {",
+      "  // 업무 로직",
+      "}"
+    ],
+    "description": "Utils isNotEmpty"
+  },
+	"Message showAlert": {
+    "prefix": "cf-utils-showAlert",
+    "body": [
+      "// import { showAlert } from '@/util/MessageUtil';",
+      "showAlert(null, ${1:str});",
+      ""
+    ],
+    "description": "Message showAlert"
+  },
+	"Message showConfirm": {
+		"prefix": "cf-utils-showConfirm",
+		"body": [
+			"// import { showConfirm } from '@/util/MessageUtil';",
+			"",
+			"showConfirm(",
+			"  '',",
+			"  ${1:str}, // 알림 문구 작성",
+			"  () => {",
+			"    // 확인 로직",
+			"  },",
+			"  () => {",
+			"    // 닫기 로직",
+			"  },",
+			");"
+		],
+		"description": "Message showConfirm"
+	}
+}

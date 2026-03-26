@@ -1,0 +1,93 @@
+{
+	"btn": {
+		"search": "Search",
+		"save": "Save",
+		"new": "New",
+		"addRow": "Add Row",
+		"removeRow": "Remove Row",
+		"copyRow": "Copy Row",
+		"delete": "Delete",
+		"close": "Close",
+		"select": "Select",
+		"register": "Register",
+		"download": "Download",
+		"excelDownload": "en엑셀다운로드",
+		"excelUpload": "en엑셀업로드",
+		"confirm": "Confirm",
+		"btn1": "Button1",
+		"btn2": "Button2",
+		"btn3": "Button3",
+		"btn4": "Button4",
+		"btn5": "Button5",
+		"btn6": "Button6",
+		"btn7": "Button7",
+		"btn8": "Button8",
+		"btn9": "Button9",
+		"btn10": "Button10",
+		"all": "All",
+		"todayText": "Today",
+		"selectBox": "Select options"
+	},
+	"col": {
+		"regId": "Registrant ID",
+		"regDt": "Registration Date",
+		"regYmd": "Registration Date",
+		"modId": "Updater",
+		"modDt": "Update Date",
+		"modYmd": "Update Date",
+		"useYn": "Use",
+		"userId": "en사용자ID",
+		"userNm": "en사용자명",
+		"empNo": "en사원번호",
+		"empNm": "en사원명",
+		"mailAddr": "en이메일",
+		"ipAddr": "en외부 허용IP",
+		"reason": "en사유",
+		"authority": "en권한그룹코드",
+		"roleNm": "en권한그룹명",
+		"authGroupDesc": "en권한그룹정보",
+		"include": "en포함",
+		"searchYmd": "en조회일자"
+	},
+	"msg": {
+		"noChange": "No change has been made.",
+		"cannotChange": "en조회화면에서는 변경할 수 없습니다",
+		"changeDone": "This change is complete.",
+		"confirmSave": "Do you wish to save it?",
+		"confirmSaved": "en저장이 완료되었습니다.",
+		"confirmClose": "en입력한 데이터가 존재합니다. 닫으시겠습니까?",
+		"confirmDelete": "Do you wish to delete it?",
+		"duplication": "The same {{0}} already exists.",
+		"duplication2": "en중복된 {{0}}(이)가 존재합니다",
+		"placeholder1": "Enter {{0}}",
+		"placeholder2": "Enter {{0}}",
+		"noSelect": "en선택한 행이 없습니다.",
+		"newDelSelect": "Only new rows can be deleted.",
+		"excelUploadError": "There was an error uploading Excel.",
+		"systemError": "A system error has occurred. Please contact your system administrator.",
+		"errFindNm": "en 이름을 입력하세요.",
+		"errFindEmail": "en 이메일을 입력하세요.",
+		"wrongEmail": "en 올바른 이메일 주소를 입력하여 주십시오.",
+		"invalidInfo": "en 유효하지 않은 정보입니다.",
+		"enterOnly": "en {{0}}만 입력하실 수 있습니다.",
+		"requiredInput": "en {{0}} was required",
+		"closeAllTab": "en 모든 창을 닫으시겠습니까?",
+		"openTabOver": "en오픈할 수 있는 화면 수({{0}})개를 초과하였습니다."
+	},
+	"bookmark": {
+		"hasAdd": "en이미 즐겨찾기에 추가되어 있습니다.",
+		"hasOpen": "en이미 열림화면이 있습니다. 기존화면으로 이동하시겠습니까?",
+		"title": "en즐겨찾기",
+		"addBtn": "en현재페이지 추가",
+		"addMsg": "en즐겨찾기에 추가하시겠습니까?"
+	},
+	"tui": {
+		"number": "숫자"
+	},
+	"aui": {
+		"noDataMessage": "No Data to display"
+	},
+	"tab": {
+		"tabMaxCountExceed": "Exceeded maximum number of tabs created.(Max 10)"
+	}
+}

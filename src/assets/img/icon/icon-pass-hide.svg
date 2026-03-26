@@ -1,0 +1,11 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="title">
+  <title id="title">비밀번호 숨김(eye-off) 아이콘</title>
+  <desc>눈 모양 아이콘에 대각선이 그어져 있는 비밀번호 숨김 아이콘</desc>
+  <!-- Eye outline -->
+  <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <!-- Pupil -->
+  <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></circle>
+  <!-- Slash -->
+  <path d="M3 3l18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

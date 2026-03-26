@@ -1,0 +1,587 @@
+/* stylelint-disable */
+// 스크린 아웃
+@mixin screenOut {
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important;
+	line-height: 0 !important;
+	text-indent: -9999px !important;
+}
+
+// breakpoint
+@mixin breakpoint($w, $max) {
+	$min: map-get($breakpoint, $w) + 1;
+
+	@media screen and (min-width: $min) and (max-width: map-get($breakpoint, $max)) {
+		@content;
+	}
+}
+
+// breakpoint min는 +1 값
+@mixin breakpointMin($w) {
+	$min: map-get($breakpoint, $w) + 1;
+
+	@media screen and (min-width: $min) {
+		@content;
+	}
+}
+
+@mixin breakpointMax($w) {
+	@media screen and (max-width: map-get($breakpoint, $w)) {
+		@content;
+	}
+}
+
+@mixin breakpointMax1008 {
+	@media screen and (max-width: 1008px) {
+		@content;
+	}
+}
+
+// iOS Only
+@mixin iosOnly {
+	@supports (-webkit-touch-callout: none) {
+		@content;
+	}
+}
+
+// flex
+@mixin flexCenter {
+	display: flex;
+	align-items: map-get($flex, center);
+	justify-content: map-get($flex, center);
+}
+
+@mixin flexAlignCen {
+	display: flex;
+	align-items: map-get($flex, center);
+}
+
+@mixin flexAlignEnd {
+	display: flex;
+	align-items: map-get($flex, end);
+}
+
+@mixin flexAlignStart {
+	display: flex;
+	align-items: map-get($flex, start);
+}
+
+@mixin flexJustCen {
+	display: flex;
+	justify-content: map-get($flex, center);
+}
+
+@mixin flexJustStart {
+	display: flex;
+	justify-content: map-get($flex, start);
+}
+
+@mixin flexJustEnd {
+	display: flex;
+	justify-content: map-get($flex, end);
+}
+
+@mixin flexJustBet {
+	display: flex;
+	justify-content: map-get($flex, between);
+}
+
+@mixin flexWrap {
+	display: flex;
+	flex-wrap: map-get($flex, wrap);
+}
+
+@mixin flexColumn {
+	display: flex;
+	flex-direction: map-get($flex, column);
+}
+
+@mixin inlineFlexCenter {
+	display: inline-flex;
+	align-items: map-get($flex, center);
+	justify-content: map-get($flex, center);
+}
+
+@mixin inlineFlexAlignCen {
+	display: inline-flex;
+	align-items: map-get($flex, center);
+}
+
+@mixin inlineFlexAlignEnd {
+	display: inline-flex;
+	align-items: map-get($flex, end);
+}
+
+@mixin borderStyle($direct, $color: $gray-300, $size: 1px, $style: solid) {
+	@if $direct == 'multi' {
+		border: $size $style $color;
+	} @else {
+		border-#{$direct}: $size $style $color;
+	}
+}
+@mixin borderStyle($direct, $color: $gray-300, $size: 1px, $style: solid) {
+	@if $direct == 'none' {
+		border: none;
+	} @else if $direct == 'multi' {
+		border: $size $style $color;
+	} @else if $direct == 'top' {
+		border-top: $size $style $color;
+	} @else if $direct == 'left' {
+		border-left: $size $style $color;
+	} @else if $direct == 'right' {
+		border-right: $size $style $color;
+	} @else if $direct == 'bottom' {
+		border-bottom: $size $style $color;
+	} @else {
+		border-#{$direct}: $size $style $color;
+	}
+}
+
+// size
+@mixin sizeWH($width: 100%, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+// background
+@mixin backgroundStyle($url, $repeat: no-repeat, $position: center, $size: contain) {
+	background: url(#{$img-path}+$url) no-repeat $position / $size;
+}
+
+@mixin backgroundImg($url) {
+	background-image: url(#{$img-path}+$url);
+}
+
+// 말줄임
+@mixin ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin multiEllipsis($font-size, $line-height, $lines, $weight: 400, $color: $black) {
+	display: -webkit-box;
+	max-height: $line-height * $lines;
+	font-size: #{$font-size}px;
+	font-size: #{$font-size * 0.1}rem;
+	font-weight: $weight;
+	color: $color;
+	line-height: $line-height;
+	overflow: hidden;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+
+	/* autoprefixer: off */
+}
+
+// 이미지 커버
+@mixin objFitCover {
+	@include sizeWH(100%);
+
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+
+@mixin objFitContain {
+	@include sizeWH(100%);
+
+	object-fit: contain;
+	object-position: 50% 50%;
+}
+
+// float 해제
+@mixin clearBoth {
+	&::after {
+		display: block;
+		clear: both;
+		content: '';
+	}
+}
+
+// font
+@mixin fontSize($sz) {
+	font-size: #{$sz}px;
+	font-size: #{$sz * 0.1}rem;
+}
+
+@mixin fontHeadings($type, $color: $body-text) {
+	@if $type == h1 {
+		@include fontSize(20);
+	} @else if $type == h2 {
+		@include fontSize(18);
+	} @else if $type == h3 {
+		@include fontSize(16);
+	} @else if $type == h4 {
+		@include fontSize(16);
+	} @else if $type == h5 {
+		@include fontSize(14);
+	} @else if $type == h6 {
+		@include fontSize(12);
+	} @else {
+		@error "Unknown type #{$type}.";
+	}
+
+	font-weight: 700;
+	color: $color;
+	line-height: 1.2;
+}
+
+@mixin fontMediumHeadings($type, $color: $body-text) {
+	@if $type == h1 {
+		@include fontSize(36);
+	} @else if $type == h2 {
+		@include fontSize(28);
+	} @else if $type == h3 {
+		@include fontSize(21);
+	} @else if $type == h4 {
+		@include fontSize(18);
+	} @else if $type == h5 {
+		@include fontSize(16);
+	} @else if $type == h6 {
+		@include fontSize(14);
+	} @else {
+		@error "Unknown type #{$type}.";
+	}
+
+	font-weight: 500;
+	color: $color;
+	line-height: 1.2;
+}
+
+@mixin fontDisplayHeadings($type, $color: $body-text) {
+	@if $type == d1 {
+		@include fontSize(80);
+	} @else if $type == d2 {
+		@include fontSize(72);
+	} @else if $type == d3 {
+		@include fontSize(64);
+	} @else if $type == d4 {
+		@include fontSize(56);
+	} @else if $type == d5 {
+		@include fontSize(48);
+	} @else if $type == d6 {
+		@include fontSize(36);
+	} @else {
+		@error "Unknown type #{$type}.";
+	}
+
+	font-weight: 400;
+	color: $color;
+	line-height: 1.2;
+}
+
+@mixin fontBody14($weight, $color: $body-text, $style: normal, $decor: none) {
+	@include fontSize(14);
+	color: $color;
+	font-weight: $weight;
+	font-style: $style;
+	line-height: 1.5;
+	text-decoration: $decor;
+}
+
+@mixin fontBody12($weight, $color: $body-text) {
+	@include fontSize(12);
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+@mixin fontBody11($weight, $color: $body-text) {
+	@include fontSize(11);
+
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+@mixin fontBody10($weight, $color: $body-text) {
+	@include fontSize(10);
+
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+@mixin fontBody16($weight, $color: $body-text) {
+	@include fontSize(16);
+
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+@mixin fontBody18($weight, $color: $body-text) {
+	@include fontSize(18);
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+@mixin fontBody20($weight, $color: $body-text) {
+	@include fontSize(21);
+
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+@mixin fontBody24($weight, $color: $body-text) {
+	@include fontSize(24);
+
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+@mixin fontBody28($weight, $color: $body-text) {
+	@include fontSize(28);
+
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+@mixin fontBody32($weight, $color: $body-text) {
+	@include fontSize(32);
+
+	font-weight: $weight;
+	color: $color;
+	line-height: 1.5;
+}
+
+// 그림자 shadow
+@mixin shadowStyle($type) {
+	@if $type == s {
+		// box-shadow: 0px 2px 4px rgba($black, 0.075);
+		// box-shadow: 0px 1px 3px rgba($black, 0.075);
+		box-shadow: 0px 1px 4px -1px rgba($black, 0.075);
+	} @else if $type == r {
+		box-shadow: 0px 8px 16px rgba($black, 0.15);
+	} @else if $type == l {
+		box-shadow: 0px 16px 48px rgba($black, 0.175);
+	} @else if $type == focus {
+		border-color: $focused;
+		box-shadow: 0px 0px 0px 2px rgba(25, 152, 168, 0.25);
+	} @else if $type == success {
+		border-color: map-get($colors, success);
+		box-shadow: 0px 0px 0px 2px rgba(25, 135, 84, 0.25);
+	} @else if $type == danger {
+		border-color: map-get($colors, danger);
+		box-shadow: 0px 0px 0px 2px rgba(220, 53, 69, 0.25);
+	} @else {
+		@error "Unknown type #{$type}.";
+	}
+}
+
+// ico svg
+@mixin icoSvg($size: 100%, $color: map-get($colors, secondary), $block: false) {
+	@if $block {
+		display: block;
+	} @else {
+		display: inline-block;
+	}
+
+	@include sizeWH($size);
+	color: $color;
+
+	> svg {
+		@include objFitCover;
+		display: block;
+	}
+}
+
+// 비활성화
+@mixin disabledStyle {
+	background: $gray-200;
+	color: $gray-400;
+	border-color: $gray-400;
+}
+
+// position
+@mixin absoluteTopCen {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin absoluteLeftCen {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin absoluteCen {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin absoluteFull {
+	@include sizeWH(100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+// input 비활성 라벨
+@mixin inputDisabledLabel {
+	input:disabled + label {
+		.ico,
+		.label {
+			cursor: default;
+		}
+	}
+}
+
+// 스크롤 scroll
+@mixin scrollNone {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+// mouse event
+@mixin mouseHover {
+	&:hover:not(:disabled, :active, .is-selected) {
+		// &:hover:not(:disabled, :active) {
+		@content;
+	}
+}
+
+@mixin mouseActive {
+	&:active,
+	&:focus-visible {
+		@content;
+	}
+}
+
+@mixin mouseDisable {
+	&:disabled {
+		@content;
+	}
+}
+
+@mixin mouseEffect($transition: true) {
+	&:hover,
+	&:active,
+	&:focus-visible {
+		@content;
+	}
+
+	@if $transition {
+		transition: background 0.3s;
+	}
+}
+
+// 버튼 효과
+@mixin buttonTotal {
+	@include sizeWH(100%, map-get($sizes, m));
+	@include fontBody14(400, map-get($colors, primary));
+
+	padding: 0 20px;
+	background: $gray-100;
+
+	@include mouseEffect {
+		background: $gray-200;
+	}
+}
+
+// max width auto
+@mixin maxWidthAuto($width, $auto: true) {
+	width: 100%;
+	max-width: #{$width}px !important;
+
+	@if $auto {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+// 폼(Form) 하단 간격
+@mixin formPaddingBottom {
+	padding-bottom: 16px;
+}
+
+// interval 상단 간격
+@mixin intervalMarginTop($size) {
+	> li + li {
+		margin-top: #{$size}px;
+	}
+}
+
+@mixin intervalLineList($size: 28px) {
+	> li {
+		&:not(:first-of-type) {
+			@include borderStyle(top, $gray-400);
+
+			margin-top: $size;
+			padding-top: $size;
+		}
+	}
+}
+
+// 불릿 리스트
+@mixin bulletList($size: m) {
+	> li {
+		display: flex;
+		padding: 0;
+
+		&::before {
+			@include sizeWH(4px);
+
+			flex-shrink: 0;
+			position: relative;
+			margin-right: 8px;
+			background: $body-text;
+			border-radius: 50%;
+			content: '';
+
+			@if $size == m {
+				top: 8.5px;
+			}
+		}
+
+		&:not(:first-of-type) {
+			margin-top: 4px;
+		}
+	}
+}
+
+// 그리드 정렬
+@mixin calculateGridCol($col, $interval: 24px) {
+	@include flexWrap;
+
+	> li {
+		flex-shrink: 0;
+		width: calc((100% - #{$interval}) / $col);
+
+		&:nth-of-type(even) {
+			margin-left: #{$interval};
+		}
+	}
+}
+
+// 셀렉트 라벨 커스텀
+@mixin selectLabelCustom($type) {
+	@if $type == 'button' {
+		@include mouseHover {
+			background: transparent;
+
+			.select__label-text {
+				text-decoration: underline;
+			}
+		}
+
+		@include mouseActive {
+			background: transparent;
+
+			.select__label-text {
+				text-decoration: underline;
+			}
+		}
+	}
+}

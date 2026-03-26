@@ -1,0 +1,18 @@
+{
+  "btn": {
+    "main": "en메인으로",
+    "prev": "en이전 페이지로"
+  },
+  "msg": {
+    "notFound": "en요청하신 페이지를 찾을 수 없습니다.",
+    "checkUrl": "en입력한 주소가 정확한지 다시 한번 확인해주세요.",
+    "error": "en일시적인 오류가 발생했습니다.",
+    "refresh": "en페이지를 새로고침하거나 잠시 후 다시 접속해주세요."
+  },
+  "history": {
+    "title": "en접속기록",
+    "ipAddr": "Client IP",
+    "logDtm": "Log Time",
+    "logType": "Log Type"
+  }
+}

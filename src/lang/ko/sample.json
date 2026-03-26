@@ -1,0 +1,17 @@
+{
+  "treeSample": {
+    "id": "ID",
+    "name": "Name",
+    "charge": "Charge",
+    "complete": "Complete(%)",
+    "start": "Start Date",
+    "end": "End Date"
+  },
+  "sample": {
+    "id": "ID",
+    "date": "Date",
+    "name": "Name",
+    "price": "Price",
+    "quantity": "Quantity"
+  }
+}

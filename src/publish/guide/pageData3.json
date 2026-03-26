@@ -1,0 +1,704 @@
+{
+	"_comment": "state => 0:대기 / 1:우선진행 / 2:진행중 / 3:완료 / 4:취소 / 5:개발이미완료",
+	"data": [
+		{
+			"depth1": "반품",
+			"depth2": "반품현황",
+			"depth3": "반품진행현황",
+			"url": "RtInplanTotal",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반품현황",
+			"depth3": "반품판정현황",
+			"url": "RtQCConfirmResult",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반품현황",
+			"depth3": "이력상품반품현황",
+			"url": "RtInplanSN",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반품작업",
+			"depth3": "외부비축이력상품반품현황",
+			"url": "RtInplanSNExDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반품작업",
+			"depth3": "반품확정처리",
+			"url": "RtReceiptConfirm",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반품작업",
+			"depth3": "외부비축반품확정처리",
+			"url": "RtReceiptConfirmExDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반품작업",
+			"depth3": "반품판정처리",
+			"url": "RtQCConfirm",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반품작업",
+			"depth3": "반품회수/미회수변경",
+			"url": "RtReceiptModifyReturnType",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반출처리",
+			"depth3": "협력사반품지시",
+			"url": "RtReturnOut",
+			"date": "2025-10-02",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반출처리",
+			"depth3": "외부비축협력사반품지시",
+			"url": "RtReturnOutExDC",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "반품",
+			"depth2": "반출처리",
+			"depth3": "반출명세서출력",
+			"url": "ROInvoice",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "재고조회",
+			"url": "StStock",
+			"date": "2025-07-22",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "재고금액조회",
+			"url": "StStockPrice",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "외부비축재고조회",
+			"url": "StStockOutOrg",
+			"date": "2025-07-24",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "이력재고조회",
+			"url": "StStockSN",
+			"date": "2025-07-24",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "수불현황",
+			"url": "StInoutResult",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "외부비축상품별수불현황",
+			"url": "StDailyInoutEXDC",
+			"date": "2025-07-24",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "재고감모현황",
+			"url": "StAdjustResult",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "외부비축재고감모현황",
+			"url": "StAdjustResultExDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "재고처리현황",
+			"url": "StTransaction",
+			"date": "2025-07-22",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "자동창고처리현황",
+			"url": "DvDataviewSingleSP",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "이력재고처리현황",
+			"url": "StTransactionSN",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "재고변경사유현황",
+			"url": "MgModifyLog",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "외부비축재고변경사유현황",
+			"url": "MgModifyLogExDC",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "재고라벨출력",
+			"url": "StStockLabel",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "상품별현재고(PLT)현황",
+			"url": "StStockChain",
+			"date": "2025-09-22",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "브랜드별재고현황",
+			"url": "StStockBrand",
+			"date": "2025-09-11",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "유통기한점검",
+			"url": "StStockLotMonitoring",
+			"date": "2025-11-10",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고일괄이동",
+			"url": "StLocMove",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고일괄이동(수원3층)",
+			"url": "StLocMoveBox",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "CROSS자동보충",
+			"url": "StMoveCross",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "외부비축센터간이동",
+			"url": "StOutMove",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "KIT상품생산관리",
+			"url": "StPickMKit",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "유통기한변경",
+			"url": "StConvertLot",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "외부비축소비기한변경",
+			"url": "StConvertLotExDC",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "상품이력번호등록",
+			"url": "StSkuLabel",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "상품이력번호등록(재고생성)",
+			"url": "StSkuLabelExDC",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "상품이력번호변경",
+			"url": "StConvertSN",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "이력상품바코드변경",
+			"url": "StConvertIdSN",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고속성변경",
+			"url": "StConvertCG",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "외부비축재고속성변경(추가개발)",
+			"url": "StConvertCGExDC",
+			"date": "2025-06-13",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "PLT-ID변경",
+			"url": "StConvertId",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "센터자체감모",
+			"url": "StAdjustment",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "외부비축BL내재고이관",
+			"url": "StAdjustmentTRBLExDC",
+			"date": "2026-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "일괄재고조정",
+			"url": "StAdjustmentBatch",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고감모요청/처리",
+			"url": "StAdjustmentRequest",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "외부비축재고조정처리",
+			"url": "StAdjustmentRequeStExDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고폐기요청/처리",
+			"url": "StDisuseRequest",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "외부비축재고폐기처리",
+			"url": "StDisuseRequeStExDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "폐기/감모결재",
+			"url": "StApproval",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "외부비축폐기/감모결재",
+			"url": "StApprovalExDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "반품재고폐기요청/처리",
+			"url": "StRTDisuseRequest",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "키트처리",
+			"url": "StMKit",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고조사",
+			"depth3": "재고조사지시",
+			"url": "StInquiryInplan",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고조사",
+			"depth3": "재고조사등록",
+			"url": "StInquiry",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고조사",
+			"depth3": "재고조사현황",
+			"url": "StInquiryResult",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고조사",
+			"depth3": "재고조사결과(합계)",
+			"url": "DvDataviewSingleSP",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고조사",
+			"depth3": "재고조사결과처리",
+			"url": "StInquiryMove",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고운영관리",
+			"depth3": "재고트랜젝션체크",
+			"url": "DvDataviewSingleSP",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "기타재고관리",
+			"depth3": "공용기수불관리",
+			"url": "StVesselInOut",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고조정",
+			"depth3": "상품이력계약정보변경",
+			"url": "StConvertContractSN",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고현황",
+			"depth3": "저장품재고조회(CJ대한통운제공)",
+			"url": "#N/A",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "누락분STO이체",
+			"url": "OmTnsfMissingSTO",
+			"date": "2025-11-11",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "재고",
+			"depth2": "3PL관리",
+			"depth3": "외부창고재고현황(I/F)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{ "depth1": "재고", "depth2": "3PL관리", "depth3": "입고주문", "url": "#N/A", "date": "", "state": 0, "etc": "" },
+		{ "depth1": "재고", "depth2": "3PL관리", "depth3": "출고주문", "url": "#N/A", "date": "", "state": 0, "etc": "" },
+		{ "depth1": "재고", "depth2": "3PL관리", "depth3": "재고확인", "url": "#N/A", "date": "", "state": 0, "etc": "" },
+		{ "depth1": "재고", "depth2": "3PL관리", "depth3": "입출고이력", "url": "#N/A", "date": "", "state": 0, "etc": "" },
+		{
+			"depth1": "재고",
+			"depth2": "3PL관리",
+			"depth3": "정산기준관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "3PL관리",
+			"depth3": "정산내역현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{ "depth1": "재고", "depth2": "3PL관리", "depth3": "증빙관리", "url": "#N/A", "date": "", "state": 0, "etc": "" },
+		{
+			"depth1": "재고",
+			"depth2": "3PL관리",
+			"depth3": "화주재고조회",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "3PL관리",
+			"depth3": "화주입출고이력",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "3PL관리",
+			"depth3": "수익전표자동생성",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "KIT 세부 자품목 재고 관리및조회",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "시점별 재고 조회",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고조사(소비기한)_실사내역 선정",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고조사(소비기한)_실사_지시(PDA,출력)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고조사(소비기한)_실사내용 반영(PDA,EXCEL)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고작업",
+			"depth3": "재고조사(소비기한)_ 재실사",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{ "depth1": "재고", "depth2": "재고작업", "depth3": "ABC 분석", "url": "#N/A", "date": "", "state": 0, "etc": "" },
+		{
+			"depth1": "반품",
+			"depth2": "반품작업",
+			"depth3": "오출고 상품 반품 등록",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "재고",
+			"depth2": "재고조정",
+			"depth3": "외부창고KIT처리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		}
+	]
+}
