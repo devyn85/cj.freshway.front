@@ -1,0 +1,563 @@
+{
+	"_comment": "state => 0:대기 / 1:우선진행 / 2:진행중 / 3:완료 / 4:취소 / 5:개발이미완료",
+	"data": [
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "고객정보(New)",
+			"url": "MsCuSt",
+			"date": "2025-06-23",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "고객배송조건(New)",
+			"url": "MsCustDeliveryInfo",
+			"date": "2025-08-28",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "협력사집하조건",
+			"url": "MsCustDeliveryInfoP",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "운송사정보",
+			"url": "MsCarrier",
+			"date": "2025-07-21",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "저장위치정보",
+			"url": "MsPLANTXSL",
+			"date": "2025-06-16",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "외부창고현황관리",
+			"url": "MsExDCStatus",
+			"date": "2025-06-16",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "특별관리고객현황",
+			"url": "MsCuStRedzone",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "상품정보",
+			"url": "MsSku",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "센터상품속성",
+			"url": "MsSkuDcSet",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "KIT상품정보",
+			"url": "MsKit",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "센터상품속성(광역일배)",
+			"url": "MsSkuDcSetSTO",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "수발주정보",
+			"url": "MsPurchaseCust",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "발주직송그룹관리",
+			"url": "MsDirectDlvGroup",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "수급마스터관리(New)",
+			"url": "MsPurchaseDCNew",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "CK자동수급상품관리",
+			"url": "CmCodeFixManager",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "MOQ/LT마스터",
+			"url": "MsSkuChainMoq",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "PLT변환값마스터",
+			"url": "MsSkuChain",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "본점별브랜드 마스터",
+			"url": "MsCustBrand",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "상품기준정보",
+			"depth3": "센터상품라벨속성",
+			"url": "MsSkuDcLabel",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "차량기준정보",
+			"depth3": "차량정보(New)",
+			"url": "MsCarDriver",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "권역그룹",
+			"url": "MsDistrictGroup",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "권역별차량관리",
+			"url": "MsDistrict",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "센터별거래처관리",
+			"url": "MsDCxCust",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "거래처별POP관리",
+			"url": "MsPopMng",
+			"date": "2025-07-21",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "거래처별POP관리(광역일배)",
+			"url": "MsPopMngSTO",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "우편번호별POP관리",
+			"url": "MsPostPopMng",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "존정보",
+			"url": "MsZoneManager",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "로케이션정보",
+			"url": "MsLocation",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "권역기준관리",
+			"depth3": "기본LOC일괄등록",
+			"url": "MsSkuDcLocChange",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "피킹그룹정보",
+			"url": "MsPickBatchGroup",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "피킹유형코드정보",
+			"url": "CmCodeFix",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "수불마감정보",
+			"url": "StDailyInoutClose",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "센터서류",
+			"url": "MsCenterDoc",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "직접비배부 마스터",
+			"url": "MsDistributionDirect",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "간접비배부 마스터",
+			"url": "MsDistributionIndirect",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "배송조건 마스터",
+			"url": "MsDeliveryCost",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "기둥/빈공간정보",
+			"url": "MsBlankLoc",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "분류피킹공정셋팅",
+			"url": "MsCenterProcess",
+			"date": "2025-12-11",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "하역비용단가관리",
+			"url": "CmGoalCommon",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "수탁보관단가관리",
+			"url": "CmGoalCommon",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "사용자및센터정보",
+			"depth3": "물류센터관리",
+			"url": "CmDCManager",
+			"date": "2025-07-21",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "사용자및센터정보",
+			"depth3": "물류센터별창고관리",
+			"url": "CmDCxORGANIZEManager",
+			"date": "2025-07-21",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "사용자및센터정보",
+			"depth3": "센터별취급고객사",
+			"url": "CmDCxSTORERManager",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "사용자및센터정보",
+			"depth3": "WMS자체감모권한",
+			"url": "CmCodeFixManager",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "사용자및센터정보",
+			"depth3": "센터서류담당자관리",
+			"url": "MsCenterDocUser",
+			"date": "2025-07-21",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "게시판관리",
+			"depth3": "공지사항",
+			"url": "Cbcommunityboardsinglelist",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "게시판관리",
+			"depth3": "자료실",
+			"url": "Cbcommunityboardsinglelist",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "코드기준정보",
+			"depth3": "3PL업체코드",
+			"url": "CmCodeFixManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "차량기준정보",
+			"depth3": "기사정보일괄업로드 - [기사정보]",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준정보",
+			"depth3": "로케이션등록일괄업로드 팝업 - [로케이션정보]",
+			"url": "#N/A",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준정보",
+			"depth3": "센터정책관리",
+			"url": "MsCenterPolicyMng",
+			"date": "2025-10-17",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "코드기준정보",
+			"depth3": "사업부상세조직분류",
+			"url": "MsCostCenterCtgyInfo",
+			"date": "2025-12-03",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "모니터링 고객관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "납품완료SMS설정관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "거래처기준정보",
+			"depth3": "적온관제모니터링",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "3PL 전산 기준 목록",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "3PL 수수료 기준 관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "ABC 기준등록",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "랙 바코드 출력 (QR,바코드)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "특수경로 기준 정보 등록",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "위탁물류 처리 기준정보 -품목 기준정보",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "기준정보",
+			"depth2": "센터기준관리",
+			"depth3": "위탁물류 처리 기준정보 - 수수료기준정보",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		}
+	]
+}

@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd" opacity=".4">
+        <g transform="translate(2 2)">
+            <rect fill="#1A1A1A" x="4" y="2" width="7" height="1" rx=".5"/>
+            <circle stroke="#1A1A1A" cx="2.5" cy="2.5" r="2"/>
+        </g>
+        <g transform="translate(3 8)">
+            <rect fill="#1A1A1A" y="2" width="7" height="1" rx=".5"/>
+            <circle stroke="#1A1A1A" cx="8.5" cy="2.5" r="2"/>
+        </g>
+    </g>
+</svg>

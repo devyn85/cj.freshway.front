@@ -1,0 +1,57 @@
+{
+	// 환경 (env)
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	// 서드파티 플러그인
+	"plugins": ["react", "@typescript-eslint", "prettier", "jsdoc"],
+	// 플러그인 사용 규칙
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"prettier",
+		"./.eslintrc-auto.json",
+		// jsdoc 사용 시 주석 해제
+		"plugin:jsdoc/recommended"
+	],
+	// eslint 구문 분석
+	"parser": "@typescript-eslint/parser",
+	// ESLint 사용 javascript 옵션
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		// "project": "./tsconfig.json",
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	// 규칙
+	"rules": {
+		"prettier/prettier": "error", // eslnt
+		"arrow-body-style": "off",
+		"prefer-arrow-callback": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-explicit-any": 0,
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"react/display-name": "off",
+		"react/react-in-jsx-scope": "off" /* import React from 'react' 모든 페이지에 적는거 방지 */,
+		"react-hooks/exhaustive-deps": "off",
+		"react/no-unescaped-entities": "off",
+		// jsdoc 해제 시 주석 해제
+		"jsdoc/check-tag-names": [
+			"error",
+			{
+				"definedTags": ["component"]
+			}
+		],
+		"jsdoc/require-param-type": [
+			"warn",
+			{
+				"defaultDestructuredRootType": "any",
+				"setDefaultDestructuredRootType": true
+			}
+		]
+	}
+}

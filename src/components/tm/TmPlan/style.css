@@ -1,0 +1,94 @@
+.manual-split-button {
+	padding: 0 8px;
+	height: 90%;
+	font-size: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	border: 1px solid #d9d9d9;
+	background: #fff;
+	color: rgba(0, 0, 0, 0.88);
+	transition: all 0.2s;
+}
+
+.manual-split-button.disabled {
+	cursor: not-allowed;
+	background: #f5f5f5;
+	color: #ccc;
+}
+
+/* 타임라인 필터 바 통일 스타일 */
+.tm-plan-filter-bar {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: 8px;
+}
+
+.tm-plan-filter-bar .ant-form {
+	display: contents;
+}
+
+.tm-plan-filter-bar .ant-col {
+	flex: none !important;
+	max-width: none !important;
+	width: auto !important;
+}
+
+.tm-plan-filter-bar .ant-form-item {
+	margin-bottom: 0;
+	background: transparent;
+}
+
+.tm-plan-filter-bar .ant-form-item .ant-form-item-label {
+	display: none;
+}
+
+.tm-plan-filter-bar .ant-form-item .ant-form-item-control {
+	flex: none;
+}
+
+.tm-plan-filter-bar .ant-input-search,
+.tm-plan-filter-bar .ant-input-affix-wrapper {
+	height: 28px !important;
+}
+
+.tm-plan-filter-bar .ant-input {
+	height: 28px !important;
+	min-height: 28px !important;
+	font-size: 12px;
+}
+
+.tm-plan-filter-bar .ant-input-search-button {
+	height: 28px !important;
+}
+
+.tm-plan-filter-bar .ant-select {
+	height: 28px !important;
+}
+
+.tm-plan-filter-bar .ant-select .ant-select-selector {
+	height: 28px !important;
+	min-height: 28px !important;
+	font-size: 12px;
+	align-items: center;
+}
+
+.tm-plan-filter-bar .ant-select-selection-item,
+.tm-plan-filter-bar .ant-select-selection-placeholder {
+	line-height: 26px !important;
+	font-size: 12px;
+}
+
+.tm-plan-filter-bar .ant-select-multiple .ant-select-selection-item {
+	height: 20px;
+	line-height: 18px !important;
+	font-size: 11px;
+}
+
+/* 타임라인 드래그 중 텍스트 선택 방지 */
+body.timeline-dragging {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}

@@ -1,0 +1,213 @@
+{
+  "_comment": "state => 0:대기 / 1:진행 / 2:수정 / 3:완료 / 4:취소 / 5: 보류",
+  "data": [
+    {
+      "depth1": "Colors",
+      "depth2": "",
+      "depth3": "",      
+      "url": "colors",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "Typography",
+      "depth2": "",
+      "depth3": "",      
+      "url": "typography",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+
+    {
+      "depth1": "Icons",
+      "depth2": "아이콘 모음 (avatar, symbol)",
+      "depth3": "",      
+      "url": "icons",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "버튼",
+      "depth2": "button 모음(button / a)",
+      "depth3": "",      
+      "url": "buttons",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "Form",
+      "depth2": "Input Text",
+      "depth3": "",      
+      "url": "inputText",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "",
+      "depth2": "Input Button",
+      "depth3": "",      
+      "url": "inputButton",
+      "date": "",
+      "state": 0,
+      "etc": "체크박스, 라디오 버튼"
+    },
+    {
+      "depth1": "",
+      "depth2": "Input Toggle",
+      "depth3": "",      
+      "url": "inputToggle",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "",
+      "depth2": "Input Search",
+      "depth3": "",      
+      "url": "inputSearch",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "셀렉트박스 (드롭다운)",
+      "depth2": "",
+      "depth3": "",      
+      "url": "select",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "",
+      "depth2": "시간",
+      "depth3": "",      
+      "url": "selectTime",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "달력",
+      "depth2": "",
+      "depth3": "",      
+      "url": "datepicker",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "파일 Drag and Drop",
+      "depth2": "",
+      "depth3": "",      
+      "url": "filedrop",
+      "date": "",
+      "state": 0,
+      "etc": "사용중인 컴포넌트 => '사용중'으로 표기"
+    },
+    {
+      "depth1": "툴팁(Tooltip)",
+      "depth2": "",
+      "depth3": "",      
+      "url": "tooltip",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "알림 박스(Notification Box)",
+      "depth2": "콘텐츠 알림박스",
+      "depth3": "",      
+      "url": "notification",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "",
+      "depth2": "플로팅 알림박스",
+      "depth3": "",      
+      "url": "toast",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "tabs ",
+      "depth2": "",
+      "depth3": "",      
+      "url": "tabs",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "pagination",
+      "depth2": "",
+      "depth3": "",      
+      "url": "pagination",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "flag",
+      "depth2": "",
+      "depth3": "",      
+      "url": "flags",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "tags",
+      "depth2": "",
+      "depth3": "",      
+      "url": "tags",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "logo",
+      "depth2": "",
+      "depth3": "",      
+      "url": "logo",
+      "date": "",
+      "state": 0,
+      "etc": " "
+    },
+    {
+      "depth1": "spinners",
+      "depth2": "",
+      "depth3": "",      
+      "url": "spinner",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "steps",
+      "depth2": "",
+      "depth3": "",      
+      "url": "steps",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    },
+    {
+      "depth1": "apexcharts",
+      "depth2": "그래프",
+      "depth3": "",      
+      "url": "apexcharts",
+      "date": "",
+      "state": 0,
+      "etc": ""
+    }
+  ]
+}

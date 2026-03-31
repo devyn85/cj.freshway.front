@@ -1,0 +1,125 @@
+/* stylelint-disable */
+// color
+$grays: (
+	'50': $gray-50,
+	'100': $gray-100,
+	'200': $gray-200,
+	'300': $gray-300,
+	'400': $gray-400,
+	'500': $gray-500,
+	'600': $gray-600,
+	'700': $gray-700,
+	'800': $gray-800,
+	'900': $gray-900,
+);
+
+$greens: (
+	'300': $green-300,
+	'600': $green-600,
+	'700': $green-700,
+	'900': $green-900,
+	'custom-1': $green-custom-1,
+);
+
+$reds: (
+	'700': $red-700,
+);
+
+$yellows: (
+	'700': $yellow-700,
+	'custom-1': $yellow-custom-1,
+);
+
+// map-get($colors, info);
+$colors: (
+	primary: $green-700,
+	secondary: $gray-700,
+	tertiary: $gray-300,
+	success: $green-700,
+	danger: $red-700,
+	warning: $yellow-700,
+	info: #0dcaf0,
+	light: $gray-200,
+	dark: $gray-900,
+	body-link: $body-link,
+	body-text: $body-text,
+	body-selected: $body-selected,
+	black: $black,
+	white: $white,
+	gray-100: $gray-100,
+	gray-200: $gray-200,
+	gray-300: $gray-300,
+	gray-400: $gray-400,
+	gray-500: $gray-500,
+	gray-600: $gray-600,
+	gray-700: $gray-700,
+	gray-800: $gray-800,
+	gray-900: $gray-900,
+	///block-header: $block-header,
+);
+
+$flex: (
+	'start': flex-start,
+	'center': center,
+	'end': flex-end,
+	'between': space-between,
+	'wrap': wrap,
+	'column': column,
+);
+
+$sizes: (
+	'l': 45px,
+	'm': 35px,
+	's': 28px,
+	'es': 21px,
+	's4': 4px,
+	's8': 8px,
+	's12': 12px,
+	's13': 13px,
+	's16': 16px,
+	's18': 18px,
+	's24': 24px,
+	's30': 30px,
+	's32': 32px,
+	's36': 36px,
+	's40': 40px,
+	's48': 48px,
+	's50': 50px,
+	's64': 64px,
+	's100': 100px,
+	's112': 112px,
+	'h3': 21px,
+);
+
+$breakpoint: (
+	's': 576px,
+	'm': 768px,
+	// "m": 960px,
+	'l': 992px,
+	'xl': 1200px,
+	'xxl': 1400px,
+	'xxxl': 1680px,
+);
+
+$img-path: '/assets/';
+$navbar-height: 51px;
+$full-height: calc(var(--vh, 1vh) * 100);
+$breakpoint-fix-pd: 24px;
+$breakpoint-fix-width: 1008px;
+
+$colors-data: primary, secondary, success, danger, warning, info, light, dark;
+$max-width: 300, 480, 500, 600, 720, 800, 960, 1140;
+$interval-mt: 5, 8, 10, 12, 14, 16, 20, 24, 28, 32, 42;
+$white-space: 7, 8, 14, 16, 28, 32;
+
+%padding-b0 {
+	[class*='ipt-'][class*='__section'],
+	[class*='ipt-'][class*='__area'],
+	[class*='select-'][class*='__section'],
+	[class*='textarea'][class*='__area'],
+	[class*='datepicker-'][class*='__section'] {
+		padding-bottom: 0 !important;
+	}
+}
+
+/* stylelint-enable */

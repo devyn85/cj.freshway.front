@@ -1,0 +1,143 @@
+{
+	"commoncode": {
+		"useYn": "사용여부",
+		"group": {
+			"title": "그룹",
+			"comGrpCd": "그룹코드",
+			"grpCdNm": "그룹명",
+			"grpCdDesc": "그룹설명"
+		},
+		"code": {
+			"title": "코드",
+			"comCd": "코드",
+			"cdNm": "코드명",
+			"sortNo": "정렬순서",
+			"cdDesc": "코드설명",
+			"rsvStrVal": "참조"
+		},
+		"msg": {
+			"groupAddSave": "그룹을 먼저 저장하시기 바랍니다."
+		}
+	},
+	"users": {
+		"user": {
+			"userId": "사용자 ID",
+			"userNm": "사용자명",
+			"mailAddr": "E-MAIL",
+			"empNo": "사번",
+			"userStatus": "사용자상태",
+			"userEnable": "사용여부"
+		},
+		"message": {
+			"initPassword": "사용자 임시 비밀번호는 <br/>{{0}} 입니다"
+		}
+	},
+	"batch": {
+		"title": "배치 수행 이력",
+		"resultMessage": "결과 메세지",
+		"search": {
+			"searchRange": "Job 실행기간",
+			"fromDt": "Job 시작일",
+			"thruDt": "Job 종료일",
+			"status": "Job 결과"
+		},
+		"job": {
+			"jobExecutionId": "Job 실행 ID",
+			"jobInstanceId": "Job 인스턴스 ID",
+			"jobName": "Job 이름",
+			"startTime": "Job 시작 시간",
+			"endTime": "Job 완료 시간",
+			"status": "Job 결과"
+		},
+		"step": {
+			"stepExecutionId": "Step 실행 ID",
+			"stepName": "Step 이름",
+			"startTime": "Step 시작 시간",
+			"endTime": "Step 완료 시간",
+			"readCount": "Read Count",
+			"writeCount": "Write Count",
+			"status": "Step 결과",
+			"getLog": "Step 결과 메세지",
+			"userLog": "User Log"
+		}
+	},
+	"menu": {
+		"title": "메뉴",
+		"menuId": "메뉴ID",
+		"menuNm": "메뉴명",
+		"menuYn": "메뉴여부",
+		"isPopup": "팝업여부",
+		"menuUrl": "메뉴경로",
+		"description": "프로그램 설명",
+		"sortOrder": "정렬순서",
+		"upperMenuId": "상위메뉴ID"
+	},
+	"roles": {
+		"title": "권한관리",
+		"group": {
+			"authority": "권한코드",
+			"roleNm": "권한명",
+			"description": "설명"
+		},
+		"menu": {
+			"searchYn": "조회",
+			"newYn": "신규",
+			"useYn": "사용여부",
+			"saveYn": "저장",
+			"deleteYn": "삭제",
+			"printYn": "인쇄",
+			"excelYn": "엑셀다운로드",
+			"btn1Yn": "버튼1",
+			"btn2Yn": "버튼2",
+			"btn3Yn": "버튼3",
+			"btn4Yn": "버튼4",
+			"btn5Yn": "버튼5",
+			"btn6Yn": "버튼6",
+			"btn7Yn": "버튼7",
+			"btn8Yn": "버튼8",
+			"btn9Yn": "버튼9",
+			"btn10Yn": "버튼10",
+			"btnNewYn": "신규생성",
+			"newAuthority": "신규 권한코드",
+			"newRoleNm": "신규 권한명",
+			"copyBy": "{{0}}을 복사해서"
+		}
+	},
+	"ipallow": {
+		"title": "IP허용 예외관리",
+		"search": {
+			"userId": "사용자ID",
+			"ipAddr": "외부 허용IP"
+		}
+	},
+	"rolesmappingusers": {
+		"common": {
+			"auth": "권한",
+			"user": "사용자"
+		},
+		"tap": {
+			"authByUser": "권한별 사용자",
+			"userByAuth": "사용자별 권한"
+		},
+		"search": {
+			"authority": "권한그룹코드",
+			"roleNm": "권한그룹명",
+			"userNm": "사용자명",
+			"include": "포함여부"
+		}
+	},
+	"exclog": {
+		"title": "시스템 예외 이력",
+		"search": {
+			"searchDt": "조회일자"
+		},
+		"grid": {
+			"exnNo": "일련번호",
+			"excptCnts": "예외내용",
+			"occrDy": "발생일자",
+			"clntAddr": "클라이언트주소",
+			"svrAddr": "서버주소",
+			"callUri": "호출URL"
+		}
+	}
+}

@@ -1,0 +1,536 @@
+{
+	"_comment": "state => 0:대기 / 1:우선진행 / 2:진행중 / 3:완료 / 4:취소 / 5:개발이미완료",
+	"data": [
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "출고진행현황",
+			"url": "WdInplanTotal",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "이력상품출고현황",
+			"url": "WdInplanSN",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "외부창고운송비현황",
+			"url": "WdInplanOutOrg",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "광역출고현황",
+			"url": "WdInplanSTO",
+			"date": "2025-11-11",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "미출예정확인(New)",
+			"url": "WdDistributePlanNew",
+			"date": "2025-11-05",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "배송라벨삭제현황",
+			"url": "DvDataviewSingleSP1",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "출고결품현황",
+			"url": "WdShortageList",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "일배입출차이현황",
+			"url": "DvDataviewMultiSP1",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "일배PO/SO연결모니터링",
+			"url": "WdPoSoMonitoring",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "부족분리스트(RDC검증중)",
+			"url": "DvPickingScarceStock",
+			"date": "",
+			"state": 5,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "월간상품별출고량(RDC검증중)",
+			"url": "WdCenterOutList",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "결품대응현황",
+			"url": "KpWdRequestCancelqty",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "KX출고진행현황",
+			"url": "WdInplanKX",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "마감주문반영",
+			"url": "OmCloseMonitoring",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "사전주문조정의뢰",
+			"url": "WdBeforeOrderAdjustRequest",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "미출예정처리",
+			"url": "WdShortage",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "출고재고분배",
+			"url": "WdAllocateBatchGroup",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "출고분배취소",
+			"url": "WdAllocateCancel",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "출고재고보충(수원3층)",
+			"url": "StLocMoveRP",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "거래처별보충(수원3층)",
+			"url": "StLocMoveRPCust",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "자동창고보충",
+			"url": "StLocMoveAsrs",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "외부비축출고지시서",
+			"url": "WdSendOutOrder",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "피킹작업지시",
+			"url": "WdTask",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "피킹작업지시(상품별)",
+			"url": "WdTaskSku",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "피킹취소처리",
+			"url": "WdPickingCancel",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "배송라벨출력",
+			"url": "WdDeliveryLabel",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "배송라벨출력(엑셀)",
+			"url": "WdDeliveryLabelForce",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "이력배송라벨출력",
+			"url": "WdDeliveryLabelSN",
+			"date": "2025-08-05",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "배송라벨출력(CD성 저장품)",
+			"url": "WdDeliveryLabelCD",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "출고확정처리",
+			"url": "WdShipmentBatch",
+			"date": "2025-07-21",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "이력STO출고처리",
+			"url": "WdSerialOrderSTO",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "외부비축출고처리",
+			"url": "WdShipmentExDC",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "이력피킹현황",
+			"url": "WdPickingListSN",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "납품서메모입력",
+			"url": "WdRgstSerialStockShipmentInfo",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "택배송장발행",
+			"url": "WdHomeDeliveryInvoice",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "배송라벨출력(하나로엑셀)",
+			"url": "WdDeliveryLabelForceHanaro",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "출고재고보충(전센터)",
+			"url": "StLocMoveRPAll",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "배송라벨출력(쿠팡)",
+			"url": "WdDeliveryLabelForceCoupang",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "택배송장",
+			"url": "WdKxDeliveryInvoice",
+			"date": "2025-12-17",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출차지시",
+			"depth3": "출차지시처리",
+			"url": "WdLoad",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출차지시",
+			"depth3": "납품서출력",
+			"url": "WdInvoice",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출차지시",
+			"depth3": "납품서출력로그(관리자)",
+			"url": "TmInvoicelogMgr",
+			"date": "2025-07-22",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출차지시",
+			"depth3": "납품서출력(배송기사용)",
+			"url": "WdInvoiceDriver",
+			"date": "2025-06-20",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출차지시",
+			"depth3": "통합납품서출력",
+			"url": "WdInvoiceTotal",
+			"date": "2025-06-23",
+			"state": 3,
+			"etc": "우선완료"
+		},
+		{
+			"depth1": "출고",
+			"depth2": "기타출고",
+			"depth3": "매각출고처리",
+			"url": "WdShipmentETC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "기타출고",
+			"depth3": "외부센터매각출고처리",
+			"url": "WdShipmentETCEXDC",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고현황",
+			"depth3": "PDP 용 팝업(입고검수/출고검수/입출고검수) - [출고결품현황]",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "타센터 STO 등록 팝업 - [배송라벨출력(엑셀)]",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "퀵 접수 및 처리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "KIT 세부 자품목 등록",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "위탁 물류 -(CJ -> 외부 ,EX: 대한통운)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "P-BOX 정보 등록",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "P-BOX 차량별 배부",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "VSR/VOC 처리 및 연계",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "결품관련 추적 조회물",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "택배 송장분리(박스 자동추천)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "파렛트 바코드 관리 출력",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "파렛트 입출고 관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "출고",
+			"depth2": "출고작업",
+			"depth3": "위탁 물류 처리 - 주문처리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		}
+	]
+}

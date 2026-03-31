@@ -1,0 +1,194 @@
+{
+	"_comment": "state => 0:대기 / 1:우선진행 / 2:진행중 / 3:완료 / 4:취소 / 5:개발이미완료",
+	"data": [
+		{
+			"depth1": "Admin",
+			"depth2": "코드기준정보",
+			"depth3": "코드마스터",
+			"url": "CmCodeManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "사용자및센터정보",
+			"depth3": "사용자정보관리",
+			"url": "CmUserManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "사용자및센터정보",
+			"depth3": "사용자접근권한",
+			"url": "CmUserConnectManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "정보보안정보",
+			"depth3": "접속이력정보",
+			"url": "LoginHistory",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "모니터링",
+			"depth3": "KX마감진행 현황",
+			"url": "KpKXClose",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "모니터링",
+			"depth3": "자동발주모니터링",
+			"url": "OmAutoOrderMonitoring",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "인터페이스모니터링",
+			"depth3": "인터페이스상태관리",
+			"url": "MgIFMasterManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "시스템운영",
+			"depth3": "프로시저실행로그",
+			"url": "MgExecuteLogManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "시스템운영",
+			"depth3": "프로그램",
+			"url": "SysProgManage",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "시스템운영",
+			"depth3": "그룹권한",
+			"url": "SysAuthorityGroupManage",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "시스템운영",
+			"depth3": "라벨",
+			"url": "SysLabelManage",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "기타정보관리",
+			"depth3": "운송장디자인관리",
+			"url": "CmInvoiceDesignManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "기타정보관리",
+			"depth3": "주문마감상태알림대상",
+			"url": "CmCodeFixManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "기타정보관리",
+			"depth3": "자동발주알림대상",
+			"url": "CmCodeFixManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "기타정보관리",
+			"depth3": "시스템상태알림대상",
+			"url": "CmCodeFixManager",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "Admin",
+			"depth2": "시스템정보",
+			"depth3": "시스템운영자열람자료",
+			"url": "Cbcommunityboardsinglelist",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "배치",
+			"depth2": "배치관리",
+			"depth3": "배치 등록/수정",
+			"url": "BatchMng",
+			"date": "",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "배치",
+			"depth2": "배치관리",
+			"depth3": "배치 이력 조회",
+			"url": "BatchHistory",
+			"date": "",
+			"state": 3,
+			"etc": ""
+		},
+		{
+			"depth1": "마감",
+			"depth2": "마감작업",
+			"depth3": "마감 기준정보 입력 화면(물동량, 라벨, 하역비단가/특수경로)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "마감",
+			"depth2": "마감작업",
+			"depth3": "3PL 수수료 정산",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "마감",
+			"depth2": "마감작업",
+			"depth3": "위탁 물류 처리 - 수수료 정산",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		}
+	]
+}

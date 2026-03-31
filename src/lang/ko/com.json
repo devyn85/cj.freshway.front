@@ -1,0 +1,93 @@
+{
+	"btn": {
+		"search": "조회",
+		"new": "신규",
+		"save": "저장",
+		"addRow": "행추가",
+		"removeRow": "행삭제",
+		"copyRow": "행복사",
+		"delete": "삭제",
+		"close": "닫기",
+		"select": "선택",
+		"register": "신규등록",
+		"download": "다운로드",
+		"excelDownload": "엑셀다운로드",
+		"excelUpload": "엑셀업로드",
+		"confirm": "확인",
+		"btn1": "버튼1",
+		"btn2": "버튼2",
+		"btn3": "버튼3",
+		"btn4": "버튼4",
+		"btn5": "버튼5",
+		"btn6": "버튼6",
+		"btn7": "버튼7",
+		"btn8": "버튼8",
+		"btn9": "버튼9",
+		"btn10": "버튼10",
+		"all": "전체",
+		"todayText": "오늘",
+		"selectBox": "선택해주세요"
+	},
+	"col": {
+		"regId": "등록자ID",
+		"regDt": "등록일시",
+		"regYmd": "등록일자",
+		"modId": "수정자",
+		"modDt": "수정일시",
+		"modYmd": "수정일자",
+		"useYn": "사용여부",
+		"userId": "사용자ID",
+		"userNm": "사용자명",
+		"empNo": "사원번호",
+		"empNm": "사원명",
+		"mailAddr": "이메일",
+		"ipAddr": "외부 허용IP",
+		"reason": "사유",
+		"authority": "권한그룹코드",
+		"roleNm": "권한그룹명",
+		"authGroupDesc": "권한그룹정보",
+		"include": "포함",
+		"searchYmd": "조회일자"
+	},
+	"msg": {
+		"noChange": "변경사항이 없습니다.",
+		"cannotChange": "조회화면에서는 변경할 수 없습니다",
+		"changeDone": "변경이 완료되었습니다.",
+		"confirmSave": "저장하시겠습니까?",
+		"confirmSaved": "저장되었습니다.",
+		"confirmClose": "입력한 데이터가 존재합니다. 닫으시겠습니까?",
+		"confirmDelete": "삭제하시겠습니까?",
+		"duplication": "동일한 {{0}}이(가) 존재합니다.",
+		"duplication2": "중복된 {{0}}(이)가 존재합니다",
+		"placeholder1": "{{0}}을 입력해주세요.",
+		"placeholder2": "{{0}}를 입력해주세요.",
+		"noSelect": "선택한 행이 없습니다.",
+		"newDelSelect": "신규행만 삭제가 가능합니다.",
+		"excelUploadError": "엑셀업로드 중 오류가 발생하였습니다.",
+		"systemError": "시스템 오류가 발생하였습니다. 시스템관리자에게 문의 바랍니다.",
+		"errFindNm": "이름을 입력하세요.",
+		"errFindEmail": "이메일을 입력하세요.",
+		"wrongEmail": "올바른 이메일 주소를 입력하여 주십시오.",
+		"invalidInfo": "유효하지 않은 정보입니다.",
+		"enterOnly": "{{0}}만 입력하실 수 있습니다.",
+		"requiredInput": "{{0}} 항목은 필수 입력입니다.",
+		"closeAllTab": "모든 창을 닫으시겠습니까?",
+		"openTabOver": "오픈할 수 있는 화면 수({{0}})개를 초과하였습니다."
+	},
+	"bookmark": {
+		"hasAdd": "이미 즐겨찾기에 추가되어 있습니다.",
+		"hasOpen": "이미 열림화면이 있습니다. 기존화면으로 이동하시겠습니까?",
+		"title": "즐겨찾기",
+		"addBtn": "현재페이지 추가",
+		"addMsg": "즐겨찾기에 추가하시겠습니까?"
+	},
+	"tui": {
+		"number": "숫자"
+	},
+	"aui": {
+		"noDataMessage": "데이터가 존재하지 않습니다."
+	},
+	"tab": {
+		"tabMaxCountExceed": "더 이상 탭을 열 수 없습니다.(최대 10개)"
+	}
+}

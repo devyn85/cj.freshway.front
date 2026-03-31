@@ -1,0 +1,142 @@
+{
+  "commoncode": {
+    "useYn": "Use",
+    "group": {
+      "title": "Group",
+      "comGrpCd": "Group Code",
+      "grpCdNm": "Group Name",
+      "grpCdDesc": "Group Desc"
+    },
+    "code": {
+      "title": "Code",
+      "comCd": "Code",
+      "cdNm": "Code Name",
+      "sortNo": "order",
+      "cdDesc": "Code Desc",
+      "rsvStrVal": "Ref"
+    },
+    "msg": {
+      "groupAddSave": "Please save the group first."
+    }
+  },
+  "users": {
+    "user": {
+      "userId": "User ID",
+      "userNm": "User Name",
+      "mailAddr": "E-MAIL",
+      "empNo": "Emp No",
+      "userStatus": "Status",
+      "userEnable": "Usable"
+    },
+    "message": {
+      "initPassword": "en사용자 임시 비밀번호는<br> {{0}}  입니다"
+    }
+  },
+  "batch": {
+    "title": "en배치 수행 이력",
+    "resultMessage": "en결과 메세지",
+    "search": {
+      "searchRange": "enJob 실행기간",
+      "fromDt": "enJob 시작일",
+      "thruDt": "enJob 종료일",
+      "status": "enJob 결과"
+    },
+    "job": {
+      "jobExecutionId": "enJob 실행 ID",
+      "jobInstanceId": "enJob 인스턴스 ID",
+      "jobName": "enJob 이름",
+      "startTime": "enJob 시작 시간",
+      "endTime": "enJob 완료 시간",
+      "status": "enJob 결과"
+    },
+    "step": {
+      "stepExecutionId": "enStep 실행 ID",
+      "stepName": "enStep 이름",
+      "startTime": "enStep 시작 시간",
+      "endTime": "enStep 완료 시간",
+      "readCount": "enRead Count",
+      "writeCount": "enWrite Count",
+      "status": "enStep 결과",
+      "getLog": "enStep 결과 메세지",
+      "userLog": "enUser Log"
+    }
+  },
+  "menu": {
+    "title": "Menu",
+    "menuId": "Menu ID",
+    "menuNm": "Menu Name",
+    "menuYn": "Menu YN",
+    "isPopup": "Popup YN",
+    "menuUrl": "Menu Url",
+    "description": "Program Desc",
+    "sortOrder": "Sort Order",
+    "upperMenuId": "Parent Menu ID"
+  },
+  "roles": {
+    "group": {
+      "authority": "Role Code",
+      "roleNm": "Role Name",
+      "description": "Description"
+    },
+    "menu": {
+      "searchYn": "Search",
+      "newYn": "New",
+      "useYn": "Use",
+      "saveYn": "Save",
+      "deleteYn": "Delete",
+      "printYn": "Print",
+      "excelYn": "Excel Download",
+      "btn1Yn": "Button 1",
+      "btn2Yn": "Button ",
+      "btn3Yn": "Button ",
+      "btn4Yn": "Button 4",
+      "btn5Yn": "Button 5",
+      "btn6Yn": "Button 6",
+      "btn7Yn": "Button 7",
+      "btn8Yn": "Button 8",
+      "btn9Yn": "Button 9",
+      "btn10Yn": "Button 10",
+      "btnNewYn": "New Save",
+      "newAuthority": "New Role Code",
+      "newRoleNm": "New Role Name", 
+      "copyBy": "Copy By {{0}}"
+    }
+  },
+  "ipallow": {
+    "title": "enIP허용 예외 관리",
+    "search": {
+      "userId": "en사용자ID",
+      "ipAddr": "en외부 허용IP"
+    }
+  },
+  "rolesmappingusers": {
+    "common": {
+      "auth": "en권한",
+      "user": "en사용자"
+    },
+    "tap": {
+      "authByUser": "en권한별 사용자",
+      "userByAuth": "en사용자별 권한"
+    },
+    "search": {
+      "authority": "en권한그룹코드",
+      "roleNm": "en권한그룹명",
+      "userNm": "en사용자명",
+      "include": "en포함여부"
+    }
+  },
+  "exclog": {
+    "title": "en시스템 예외 이력",
+    "search": {
+      "searchDt": "en조회일자"
+    },
+    "grid": {
+      "exnNo": "en일련번호",
+      "excptCnts": "en예외내용",
+      "occrDy": "en발생일자",
+      "clntAddr": "en클라이언트주소",
+      "svrAddr": "en서버주소",
+      "callUri": "en호출URL"
+    }
+  }
+}

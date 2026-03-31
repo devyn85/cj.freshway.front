@@ -1,0 +1,284 @@
+{
+	"_comment": "state => 0:대기 / 1:우선진행 / 2:진행중 / 3:완료 / 4:취소 / 5:개발이미완료",
+	"data": [
+		{
+			"depth1": "정산",
+			"depth2": "외부창고정산",
+			"depth3": "외부창고요율관리",
+			"url": "MsExDCRate",
+			"date": "2025-07-23",
+			"state": 3,
+			"etc": "완료"
+		},
+		{
+			"depth1": "정산",
+			"depth2": "배송비정산",
+			"depth3": "지입차비용현황",
+			"url": "IbCarCostStatusDLVForCo",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "배송비정산",
+			"depth3": "고정용차비용현황",
+			"url": "IbCarCostStatusFix",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "배송비정산",
+			"depth3": "임시용차비용현황",
+			"url": "IbCarCostStatusTemp",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "배송비정산",
+			"depth3": "센터별물동량(총량)",
+			"url": "IbStoWeight",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "배송비정산",
+			"depth3": "센터별물동량(분류)",
+			"url": "IbSoWeight",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "배송비정산",
+			"depth3": "센터별물동량(입고)",
+			"url": "IbDpWeight",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "외부창고 정산",
+			"depth3": "비용기표",
+			"url": "IbExpense",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "외부창고 정산",
+			"depth3": "원가관리리포트",
+			"url": "IbExpenseStatus",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "외부창고 정산",
+			"depth3": "보관료정산",
+			"url": "IbCloseStoragefee",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "외부창고 비용 결재",
+			"depth3": "외부창고비용결재",
+			"url": "IbApprovalList",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "정산",
+			"depth2": "1000센터 정산",
+			"depth3": "일별보관료계산",
+			"url": "IbKxStoragefeeMonth",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "정산",
+			"depth2": "1000센터 정산",
+			"depth3": "보관료마감처리",
+			"url": "IbCloseStoragefee",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "정산",
+			"depth2": "1000센터 정산",
+			"depth3": "KX마감진행 현황",
+			"url": "IbKxStoragefeeExpenseMM",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		},
+		{
+			"depth1": "정산",
+			"depth2": "외부창고 정산",
+			"depth3": "외부창고관리",
+			"url": "StExdcStorage",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "센터배송정산기준",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "계약유형별정산기준",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "다중납품처관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "센터별구간설정",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "구간단가관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "지입단가관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "연비관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "고객별수당관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "휴일관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "기사별휴무관리",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "운송비정산(배송)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "운송비정산(수송)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "운송비정산(조달)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "일일운송비정산(지표용)",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "운송비 정산",
+			"depth3": "운송비정산현황",
+			"url": "#N/A",
+			"date": "",
+			"state": 0,
+			"etc": ""
+		},
+		{
+			"depth1": "정산",
+			"depth2": "외부창고정산",
+			"depth3": "외부창고 시뮬레이션",
+			"url": "#N/A",
+			"date": "",
+			"state": 2,
+			"etc": "진행중"
+		}
+	]
+}

@@ -1,0 +1,170 @@
+/*
+ ############################################################################
+ # FiledataField	: WdShortageListSearch.tsx
+ # Description		: 출고결품현황 Search
+ # Author			: 공두경
+ # Since			: 26.03.05
+ ############################################################################
+*/
+
+//Component
+import { InputText, MultiInputText, SelectBox } from '@/components/common/custom/form';
+import { Rangepicker } from '@/components/common/custom/form/Datepicker';
+
+//Lib
+import dayjs from 'dayjs';
+
+// API Call Function
+import CmCustSearch from '@/components/cm/popup/CmCustSearch';
+import CmOrganizeSearch from '@/components/cm/popup/CmOrganizeSearch';
+import CmSkuSearch from '@/components/cm/popup/CmSkuSearch';
+import CmGMultiDccodeSelectBox from '@/components/cm/user/CmGMultiDccodeSelectBox';
+import { getCommonCodeList } from '@/store/core/comCodeStore';
+import { Form } from 'antd';
+import { useSelector } from 'react-redux';
+//Util
+
+const dateFormat = 'YYYY-MM-DD';
+
+const WdShortageListSearch = forwardRef((props: any, parentRef: any) => {
+	/**
+	 * =====================================================================
+	 *  01. 변수 선언부
+	 * =====================================================================
+	 */
+	const { search, form, exception } = props;
+	const [dates, setDates] = useState([dayjs(), dayjs()]);
+	const dccode = Form.useWatch('fixdccode', form);
+	const gDccode = useSelector((state: any) => state.global.globalVariable.gDccode);
+
+	// const sampleForm = Form.useFormInstance();
+
+	// const [form] = Form.useForm();
+	const { t } = useTranslation();
+
+	/**
+	 * =====================================================================
+	 *  02. 함수
+	 * =====================================================================
+	 */
+
+	/**
+	 * =====================================================================
+	 *  03. react hook event
+	 *  예시) useEffect, useImperativeHandle, useActivate, useUnactivate
+	 * =====================================================================
+	 */
+	/**
+	 * 현재날짜를 셋팅한다.
+	 */
+	useEffect(() => {
+		// 초기값 설정 (컴포넌트 마운트 시)
+		const initialStart = dayjs();
+		const initialEnd = dayjs();
+		setDates([initialStart, initialEnd]);
+		form.setFieldValue('slipdtRange', [initialStart, initialEnd]);
+
+		// 사용자 물류센터 기본값 세팅
+		if (gDccode) {
+			form.setFieldValue('fixdccode', gDccode);
+		}
+	}, []);
+
+	return (
+		<>
+			<li>
+				<Rangepicker
+					label={t('lbl.SLIPDT_WD')} //출고일자
+					name="slipdtRange"
+					defaultValue={dates} // 초기값 설정
+					format={dateFormat} // 화면에 표시될 형식
+					span={24}
+					allowClear
+					showNow={false}
+					//nChange={handleDateChange}
+					required
+					rules={[{ required: true, validateTrigger: 'none' }]}
+				/>
+			</li>
+			<li>
+				{/* 물류센터 */}
+				<CmGMultiDccodeSelectBox
+					name="fixdccode"
+					placeholder={t('lbl.SELECT')} // 선택
+					fieldNames={{ label: 'dcname', value: 'dccode' }}
+					label={t('lbl.DCCODE')} // 물류센터
+					mode={'single'}
+					required
+					onChange={async () => {
+						//loadZone(); // 센터에 해당되는 zone 정보 조회
+					}}
+				/>
+			</li>
+			<li>
+				<CmOrganizeSearch
+					form={form}
+					name="organizeNm"
+					code="organize"
+					label={t('lbl.ORGANIZE')}
+					dccode={dccode}
+					/*창고*/ selectionMode="multipleRows"
+					dccodeDisabled={true}
+				/>
+			</li>
+			<li>
+				<MultiInputText
+					label={t('lbl.DOCNO_WD')} //주문번호
+					name="docno"
+					placeholder={t('msg.placeholder1', [t('lbl.DOCNO_WD')])}
+					onPressEnter={search}
+				/>
+			</li>
+			<li>
+				<CmSkuSearch
+					form={form}
+					name="skuNm"
+					code="sku"
+					label={t('lbl.SKU')}
+					selectionMode="multipleRows" /*상품코드*/
+				/>
+			</li>
+			<li>
+				<CmCustSearch
+					form={form}
+					name="toCustkeyNm"
+					code="toCustkey"
+					label={t('lbl.TO_CUSTKEY_WD')}
+					/*관리처코드*/ selectionMode="multipleRows"
+				/>
+			</li>
+			<li>
+				<SelectBox
+					label={t('lbl.CHANNEL_DMD')} //저장유무
+					name="channel"
+					placeholder="선택해주세요"
+					options={getCommonCodeList('PUTAWAYTYPE', '--- 전체 ---')}
+					fieldNames={{ label: 'cdNm', value: 'comCd' }}
+				/>
+			</li>
+			<li>
+				<InputText
+					label={t('lbl.SOMDCODE')} //담당MD명(SO)
+					name="somdname"
+					placeholder={t('msg.placeholder1', [t('lbl.SOMDCODE')])}
+					onPressEnter={search}
+				/>
+			</li>
+			<li>
+				<SelectBox
+					label={t('lbl.MEMO_RT')} //조정사유
+					name="reason"
+					placeholder="선택해주세요"
+					options={getCommonCodeList('REASONCODE_WD', '--- 전체 ---')}
+					fieldNames={{ label: 'cdNm', value: 'comCd' }}
+				/>
+			</li>
+		</>
+	);
+});
+
+export default WdShortageListSearch;

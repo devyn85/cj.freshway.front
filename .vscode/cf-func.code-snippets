@@ -1,0 +1,30 @@
+{
+  "Store moveTab": {
+    "prefix": "cf-func-moveTab",
+    "body": [
+      "// Custom hook import",
+      "// import { useMoveTab } from '@/hooks/useMoveTab';",
+      "",
+      "// root component 선언",
+      "const { moveTab } = useMoveTab();",
+      "",
+      "// Tab name 입력 (uuid)",
+      "moveTab(${1:str});"
+    ],
+    "description": "Store moveTab"
+  },
+  "Store moveMenu": {
+    "prefix": "cf-func-moveMenu",
+    "body": [
+      "// Custom hook import",
+      "// import { useMoveMenu } from '@/hooks/useMoveMenu';",
+      "",
+      "// component 선언",
+      "const { moveMenu } = useMoveMenu();",
+      "",
+      "// route name 입력",
+      "moveMenu(${1:str});"
+    ],
+    "description": "Store moveMenu"
+  }
+}

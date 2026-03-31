@@ -1,0 +1,255 @@
+default:
+  # 기본 ssh 용도 alpine image
+  image: $PIPELINE_CONTAINER_IMAGES/alpine:3.14.0-openssh
+  tags:
+    - fw-wms-runner
+
+# 파이프라인 global 변수 선언
+variables:
+  GIT_STRATEGY: none # job에서 소스코드 clone/fetch 동작 방식, 기본 none으로 소스 복사 안함
+  SONAR_CLASSES: ".dist" # Sonarqube 변수 (Multi Module)
+  SONAR_SRC: "$CI_PROJECT_DIR/src" # Sonarqube 변수 (Multi Module)
+
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop"
+      variables:
+        BUILD_ENV: "dev"
+        DEPLOY_IP_INT: "${DEV_WEB_IP_INT}"
+        DEPLOY_IP_EXT: "${DEV_WEB_IP_EXT}"
+        DEPLOY_USER: "${DEV_WEB_USER}"
+        DEPLOY_PATH: "${DEV_WEB_DEPLOY_PATH}"
+
+    - if: $CI_COMMIT_BRANCH == "qa"
+      variables:
+        BUILD_ENV: "qa"
+        DEPLOY_IP_INT: "${QA_WEB_IP_INT}"
+        DEPLOY_IP_EXT: "${QA_WEB_IP_EXT}"
+        DEPLOY_USER: "${QA_WEB_USER}"
+        DEPLOY_PATH: "${QA_WEB_DEPLOY_PATH}"
+
+    - if: $CI_COMMIT_BRANCH == "master"
+      variables:
+        BUILD_ENV: "prd"
+    - if: $CI_COMMIT_BRANCH == "main"
+      variables:
+        BUILD_ENV: "prd"
+
+
+# ssh 명령 처리를 위한 helper
+include:
+  - project: 'templates/ci'
+    file:
+      - '.ci-ssh-helper-1.0.yml'
+      - '.gitops-1.0.yml'
+      - '.sonar-helper-1.1.yml'
+
+
+# 각 job이 실행될 stage 선언
+stages:
+  - build
+  - sonarqube
+  - deploy
+
+# Step1. Build
+build:
+  image: $PIPELINE_CONTAINER_IMAGES/node:22.14.0
+  stage: build
+  cache:
+    key: ${CI_PROJECT_ID}
+    paths:
+      - node_modules/
+  variables:
+    GIT_STRATEGY: fetch
+  script:
+    - npm install
+    #- rm -rf ./src/publish/;
+    - NODE_OPTIONS=--max_old_space_size=6144 npm run build-${BUILD_ENV};
+  artifacts:
+    paths:
+      - ./dist
+    expire_in: 0.5 hrs
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "api"'
+      when: never
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"'
+      when: manual   
+    - if: '$CI_COMMIT_BRANCH == "qa"'
+      when: manual    
+    - if: '$CI_COMMIT_BRANCH == "develop" && $CI_PIPELINE_SOURCE == "schedule"'
+      when: always   
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+      when: manual
+  
+
+
+# Step1-2. Sonarqube 시작 (Develop Branch)
+sonarqube_all: !reference [.sonarqube, sonarqube_all]
+# Step1-2. Sonarqube 종료 (Develop Branch)
+
+
+# Step2. Dev Deploy
+int:deploy:
+  stage: deploy
+  needs:
+    - job: build
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - !reference [.ssh_helper, script]
+    - echo "개발 환경";
+    - ssh_init "$DEV_WEB_RSA_INT" "$DEPLOY_IP_INT";
+    - WORKING_DIR="$CI_PROJECT_DIR/dist"
+  script:
+    - echo "Started ${BUILD_ENV} deploy"
+    - |
+      if [ -z "$DEPLOY_PATH" ]; then
+        echo "Error: DEPLOY_PATH is not set or is empty"
+        exit 1
+      fi
+      echo "The value of DEPLOY_PATH is: $DEPLOY_PATH"
+
+    - echo '${BUILD_ENV} - INT Deploy'
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP_INT" "ls -al ${DEPLOY_PATH}";
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP_INT" "rm -rf ${DEPLOY_PATH}/*";
+    - chmod -R 764 $WORKING_DIR;
+    - scp_run "$DEPLOY_USER" "$DEPLOY_IP_INT" "-rp $WORKING_DIR/*" "${DEPLOY_PATH}";
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP_INT" "ls -al ${DEPLOY_PATH}";
+  rules:
+    - if: $CI_COMMIT_BRANCH == "qa"
+      when: manual
+    - if: '$CI_COMMIT_BRANCH == "develop" && $CI_PIPELINE_SOURCE == "schedule"'
+      when: on_success    
+    - if: $CI_COMMIT_BRANCH == "develop"
+      when: manual
+
+ext:deploy:
+  stage: deploy
+  needs:
+    - job: build
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - !reference [.ssh_helper, script]
+    - echo "개발 환경";
+    - ssh_init "$DEV_WEB_RSA_EXT" "$DEPLOY_IP_EXT";
+    - WORKING_DIR="$CI_PROJECT_DIR/dist"
+  script:
+    - echo "Started Dev deploy"
+    - |
+      if [ -z "$DEPLOY_PATH" ]; then
+        echo "Error: DEPLOY_PATH is not set or is empty"
+        exit 1
+      fi
+      echo "The value of DEPLOY_PATH is: $DEPLOY_PATH"
+
+    - echo '${BUILD_ENV} - EXT Deploy'
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP_EXT" "ls -al ${DEPLOY_PATH}";
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP_EXT" "rm -rf ${DEPLOY_PATH}/*";
+    - chmod -R 764 $WORKING_DIR;
+    - scp_run "$DEPLOY_USER" "$DEPLOY_IP_EXT" "-rp $WORKING_DIR/*" "${DEPLOY_PATH}";
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP_EXT" "ls -al ${DEPLOY_PATH}";
+  rules:
+    - if: $CI_COMMIT_BRANCH == "qa"
+      when: manual
+    - if: '$CI_COMMIT_BRANCH == "develop" && $CI_PIPELINE_SOURCE == "schedule"'
+      when: on_success    
+    - if: $CI_COMMIT_BRANCH == "develop"
+      when: manual
+
+
+
+# =========================
+# 공통 운영 배포 템플릿
+# =========================
+.deploy-prd-template:
+  stage: deploy
+  needs:
+    - job: build
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - !reference [.ssh_helper, script]
+    - echo "운영 배포 환경"
+    - ssh_init "$DEPLOY_RSA" "$DEPLOY_IP"
+    - WORKING_DIR="$CI_PROJECT_DIR/dist"
+  script:
+    - echo "Started ${BUILD_ENV} deploy - ${TARGET_DESC}"
+    - |
+      if [ -z "$DEPLOY_PATH" ]; then
+        echo "Error: DEPLOY_PATH is not set or is empty"
+        exit 1
+      fi
+      echo "The value of DEPLOY_PATH is: $DEPLOY_PATH"
+
+    - echo "${BUILD_ENV} - ${TARGET_DESC} Deploy"
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP" "ls -al ${DEPLOY_PATH}"
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP" "rm -rf ${DEPLOY_PATH}/*"
+    - chmod -R 764 "$WORKING_DIR"
+    - scp_run "$DEPLOY_USER" "$DEPLOY_IP" "-rp $WORKING_DIR/*" "${DEPLOY_PATH}"
+    - ssh_run "$DEPLOY_USER" "$DEPLOY_IP" "ls -al ${DEPLOY_PATH}"
+
+# =========================
+# main 운영 배포 (INT 01)
+# =========================
+prd:int:01:deploy:
+  extends: .deploy-prd-template
+  variables:
+    BUILD_ENV: "prd"
+    TARGET_DESC: "INT 01"
+    DEPLOY_IP: "$PRD_WEB_IP_INT_01"
+    DEPLOY_USER: "$PRD_WEB_USER_01"
+    DEPLOY_PATH: "$PRD_WEB_DEPLOY_PATH_01"
+    DEPLOY_RSA: "$PRD_WEB_RSA_INT_01"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master" || $CI_COMMIT_BRANCH == "main"'
+      when: manual
+
+# =========================
+# main 운영 배포 (INT 02)
+# =========================
+prd:int:02:deploy:
+  extends: .deploy-prd-template
+  variables:
+    BUILD_ENV: "prd"
+    TARGET_DESC: "INT 02"
+    DEPLOY_IP: "$PRD_WEB_IP_INT_02"
+    DEPLOY_USER: "$PRD_WEB_USER_02"
+    DEPLOY_PATH: "$PRD_WEB_DEPLOY_PATH_02"
+    DEPLOY_RSA: "$PRD_WEB_RSA_INT_02"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master" || $CI_COMMIT_BRANCH == "main"'
+      when: manual
+
+# =========================
+# main 운영 배포 (EXT 01)
+# =========================
+prd:ext:01:deploy:
+  extends: .deploy-prd-template
+  variables:
+    BUILD_ENV: "prd"
+    TARGET_DESC: "EXT 01"
+    DEPLOY_IP: "$PRD_WEB_IP_EXT_01"
+    DEPLOY_USER: "$PRD_WEB_USER_01"
+    DEPLOY_PATH: "$PRD_WEB_DEPLOY_PATH_01"
+    DEPLOY_RSA: "$PRD_WEB_RSA_EXT_01"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master" || $CI_COMMIT_BRANCH == "main"'
+      when: manual
+
+# =========================
+# main 운영 배포 (EXT 02)
+# =========================
+prd:ext:02:deploy:
+  extends: .deploy-prd-template
+  variables:
+    BUILD_ENV: "prd"
+    TARGET_DESC: "EXT 02"
+    DEPLOY_IP: "$PRD_WEB_IP_EXT_02"
+    DEPLOY_USER: "$PRD_WEB_USER_02"
+    DEPLOY_PATH: "$PRD_WEB_DEPLOY_PATH_02"
+    DEPLOY_RSA: "$PRD_WEB_RSA_EXT_02"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master" || $CI_COMMIT_BRANCH == "main"'
+      when: manual

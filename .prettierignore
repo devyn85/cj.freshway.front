@@ -1,0 +1,8 @@
+.vscode/*
+# AUIGrid
+**/src/lib/AUIGrid/*.js
+**/src/lib/AUIGrid/*/*.js
+**/src/lib/AUIGrid/*.css
+**/src/lib/AUIPivot/*.js
+**/src/lib/AUIPivot/*/*.js
+**/src/lib/AUIPivot/*.css

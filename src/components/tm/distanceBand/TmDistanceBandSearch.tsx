@@ -1,0 +1,147 @@
+/*
+ ############################################################################
+ # FiledataField	: TmDistanceBandSearch.tsx
+ # Description		: 센터별구간설정
+ # Author			    : Jinwoo Park(jwpark1104@cj.net)
+ # Since			    : 2025.09.12
+ ############################################################################
+*/
+// lib
+import { Form } from 'antd';
+import dayjs from 'dayjs';
+// component
+import CmCarrierSearch from '@/components/cm/popup/CmCarrierSearch';
+import { CheckBox, Rangepicker, SelectBox } from '@/components/common/custom/form';
+
+// store
+import { getCommonCodeList } from '@/store/core/comCodeStore';
+import { getUserDccodeList } from '@/store/core/userStore';
+
+// api
+
+// util
+
+// hook
+
+// type
+
+// asset
+
+const TmDistanceBandSearch = forwardRef((props: any, ref) => {
+	/**
+	 * =====================================================================
+	 *  01. 변수 선언부
+	 * =====================================================================
+	 */
+	// 다국어
+	const { t } = useTranslation();
+	const [dates, setDates] = useState([dayjs(), dayjs()]);
+	const [dcCodeList, setDcCodeList] = useState([]);
+	const dateFormat = 'YYYY-MM-DD';
+	const dcCode = Form.useWatch('dcCode', props.form);
+
+	/**
+	 * =====================================================================
+	 *  02. 함수
+	 * =====================================================================
+	 */
+	/**
+	 * 공통 코드 호출([comCd]cdNm)
+	 * @returns
+	 */
+
+	/**
+	 * =====================================================================
+	 *  03. react hook event
+	 * =====================================================================
+	 */
+	useEffect(() => {
+		// 초기값 설정 (컴포넌트 마운트 시)
+		const initialStart = dayjs();
+		const initialEnd = dayjs();
+		setDates([initialStart, initialEnd]);
+		props.form.setFieldValue('date', [initialStart, initialEnd]);
+
+		const list = getUserDccodeList('STD') || [];
+		// //console.log(list);
+		list.filter(item => {
+			item.dccode !== 'STD';
+		});
+		setDcCodeList(list.filter(item => item.dccode !== 'STD'));
+	}, []);
+	useEffect(() => {
+		// //console.log(getCommonCodeList('TM_CALC_ITEM', t('lbl.ALL'), null));
+		if (dcCode !== null && dcCode !== '' && dcCode !== undefined) {
+			// apiGeSttlItemCdList(dcCode).then(res => {
+			// 	//console.log(res);
+			// });
+		}
+	}, [dcCode]);
+	return (
+		<>
+			<li>
+				{/* <CmGMultiDccodeSelectBox
+					name="dcCode"
+					placeholder="선택해주세요"
+					fieldNames={{ label: 'dcname', value: 'dccode' }}
+					mode="single"
+					label={'물류센터'}
+					options={getCommonCodeList('DC', '전체')}
+				/> */}
+				<SelectBox
+					name="dcCode" //IF Status
+					span={24}
+					options={dcCodeList}
+					fieldNames={{ label: 'dcname', value: 'dccode' }}
+					label={'물류센터'}
+					required
+				/>
+			</li>
+			<li>
+				<Rangepicker
+					name="date"
+					label="기준일자"
+					defaultValue={dates} // 초기값 설정
+					format={dateFormat} // 화면에 표시될 형식
+					required
+					rules={[{ required: true, validateTrigger: 'none' }]}
+				/>
+			</li>
+			<li>
+				{/* 운송사조회 팝업 */}
+				<CmCarrierSearch
+					form={props.form}
+					selectionMode="singleRow"
+					name="courierName"
+					code="courier"
+					returnValueFormat="name"
+					carrierType="LOCAL"
+				/>
+			</li>
+			<li>
+				<SelectBox
+					name="contractType"
+					label="계약유형"
+					options={getCommonCodeList('CONTRACTTYPE', '전체')}
+					fieldNames={{ label: 'cdNm', value: 'comCd' }}
+					// span={24}
+				/>
+			</li>
+			<li>
+				{/* 톤급 */}
+				<SelectBox
+					name="ton"
+					placeholder="선택해주세요"
+					options={getCommonCodeList('CARCAPACITY', '전체', '')}
+					fieldNames={{ label: 'cdNm', value: 'comCd' }}
+					label={t('lbl.CARCAPACITY')}
+				/>
+			</li>
+			<li>
+				{' '}
+				<CheckBox name={'serialYn'} label="이력조회" value={'N'}></CheckBox>
+			</li>
+		</>
+	);
+});
+export default TmDistanceBandSearch;
